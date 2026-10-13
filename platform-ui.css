@@ -1,0 +1,355 @@
+/* Platform surfaces and navigation. Exercise layout remains in the mission styles. */
+:root{--ui-border:#dfe6f1;--ui-shadow:0 8px 28px rgba(25,42,94,.055);--ui-muted:#55647d;--ui-radius:20px}
+button,input,select,a{touch-action:manipulation}
+select{font:inherit;color:var(--ink)}
+:where(button,a,input,select,textarea):focus-visible{outline:3px solid #176bbd;outline-offset:3px}
+.screen h1[tabindex="-1"]:focus{outline:none}
+:where(p,small){text-wrap:pretty}
+.skip-link{position:fixed;left:16px;top:12px;padding:14px 20px;border-radius:12px;background:var(--navy);color:white;z-index:1000;transform:translateY(-150%);text-decoration:none}
+.skip-link:focus{transform:translateY(0)}
+.topbar-links{display:flex;align-items:center;gap:10px}
+.topbar-links button,.home-footer button{min-height:44px;border:0;background:transparent;color:var(--navy);padding:8px 14px;border-radius:12px;font-weight:500}
+.topbar-links button:last-child{background:var(--navy);color:white;padding-inline:22px}
+.hero h1{font-size:clamp(40px,4.2vw,60px);line-height:1.12;letter-spacing:-.025em}
+.hero__description{font-size:20px;max-width:490px;margin:24px 0 28px}
+.hero__actions{align-items:stretch;flex-direction:column;max-width:350px}
+.hero__actions .button{justify-content:flex-start;min-height:60px;font-size:17px;border-radius:16px}
+.hero__actions .button__arrow{margin-left:auto}
+.home-footer nav{gap:8px}
+.home-footer button:hover,.topbar-links button:first-child:hover{background:#fff}
+.auth-mobile-back{display:none}
+.auth-aside__brand img{filter:none;background:#fff;padding:14px 18px;border-radius:20px;width:250px;max-width:85%;height:auto;margin-bottom:28px;opacity:1}
+.auth-content__inner h1{line-height:1.15}
+.auth-lead{line-height:1.5}
+.profile-card{border-radius:20px;box-shadow:var(--ui-shadow)}
+.profile-card:hover{border-color:#8580ed}
+.checkbox-row{line-height:1.55}
+.checkbox-row a{text-decoration:underline;cursor:pointer}
+.student-screen,.admin-screen{background:#f4f7fc}
+.student-screen.screen--active{animation-name:studentScreenFade}
+@keyframes studentScreenFade{from{opacity:0}to{opacity:1}}
+.student-sidebar,.admin-sidebar{background:linear-gradient(165deg,#122866,#111e4d);border-right:1px solid #253968}
+.student-sidebar::after,.admin-sidebar::after{pointer-events:none}
+body.ui-overlay-open{overflow:hidden}
+.student-sidebar__logo,.admin-sidebar__logo{filter:none!important;background:#fff;border-radius:15px;padding:12px 16px;height:auto;max-width:100%;box-shadow:0 4px 16px #06143d33}
+.student-sidebar nav,.admin-sidebar nav{gap:5px}
+.student-sidebar nav button,.admin-sidebar nav button{border-radius:12px;min-height:46px;font-size:15px;transition:background .15s,color .15s}
+.student-sidebar nav button.is-active,.admin-sidebar nav button.is-active{background:#e6f0ff;color:#102968;box-shadow:0 4px 14px #07153820}
+.student-sidebar nav button.is-active img,.admin-sidebar nav button.is-active img{filter:brightness(0);opacity:.75}
+.student-sidebar nav button:hover:not(.is-active),.admin-sidebar nav button:hover:not(.is-active){background:#ffffff14}
+.sidebar-help{display:flex;align-items:center;gap:12px;width:100%;min-height:44px;padding:10px 14px;margin-top:auto;border:0;border-radius:12px;background:transparent;color:#cfd9f5;font-size:14px;text-align:left}
+.sidebar-help span{display:grid;place-items:center;width:25px;height:25px;border:1px solid #8295c1;border-radius:50%}
+.sidebar-help:hover{background:#ffffff14}
+.student-logout,.admin-logout{margin-top:8px}
+.sidebar-close{display:none}
+.student-header,.admin-header{background:#ffffffed;border-bottom:1px solid var(--ui-border);backdrop-filter:blur(12px)}
+.admin-header__date{font-size:13px;color:var(--ui-muted)}
+.student-header h1,.admin-header h1{letter-spacing:-.025em}
+.student-header p,.admin-header p{color:var(--ui-muted)}
+.student-content{padding:28px 38px 38px;max-width:1440px;margin-inline:auto}
+.admin-content{padding:28px 36px 40px;max-width:1480px;margin-inline:auto}
+.student-welcome-card{min-height:0;height:auto;padding:30px 36px;gap:18px;border-radius:24px;background:linear-gradient(115deg,#2538a5,#5740bd);box-shadow:0 8px 24px #29379d18}
+.student-welcome-card>div:first-child{flex:1;min-width:0;max-width:660px}
+.student-welcome-card h2{font-size:36px;margin:10px 0}
+.student-welcome-card p{font-size:17px;line-height:1.5;max-width:600px;margin:12px 0 20px}
+.student-welcome-card button{min-height:48px;padding:12px 20px;border-radius:12px;font-size:16px}
+.student-welcome-card .student-avatar-welcome{height:205px;width:205px;flex:0 0 205px;align-self:center;position:relative;right:auto;bottom:auto}
+.student-stat-grid{gap:16px;margin:20px 0}
+.student-stat-grid article{border:1px solid var(--ui-border);box-shadow:var(--ui-shadow);border-radius:var(--ui-radius);padding:20px 22px}
+.student-stat-grid article>span{font-size:14px;color:var(--ui-muted)}
+.student-stat-grid article strong{font-size:30px;margin:8px 0}
+.student-stat-grid article small{font-size:13px;color:var(--ui-muted)}
+.student-home-grid{gap:20px}
+.student-panel,.teacher-panel,.teacher-class-card,.student-progress-card,.metric-grid article,.space-card,.avatar-preview,.avatar-control-group,.achievement-grid article{border:1px solid var(--ui-border);border-radius:var(--ui-radius);box-shadow:var(--ui-shadow)}
+.student-panel{padding:24px}
+.student-panel__heading h3{font-size:20px}
+.student-panel p,.student-panel__heading p{font-size:15px;line-height:1.5;color:var(--ui-muted)}
+.student-panel button{min-height:44px;border-radius:12px}
+.student-bonus-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:24px}
+.student-bonus-list .bonus-unlock-card{margin:0;grid-template-columns:48px minmax(0,1fr);padding:22px;border-radius:20px;gap:14px;align-items:start}
+.bonus-unlock-card__icon{width:48px;height:48px;font-size:25px}
+.student-bonus-list .bonus-unlock-card h3{font-size:19px;line-height:1.25;margin:6px 0}
+.student-bonus-list .bonus-unlock-card p{font-size:14px;line-height:1.5}
+.student-bonus-list .bonus-unlock-card>button{grid-column:2;justify-self:start;min-height:44px;padding:10px 14px;border-radius:12px}
+[data-student-section="home"] .next-mission>button:not(:disabled),[data-student-section="home"] .student-bonus-list .bonus-unlock-card>button:not(:disabled){background:#a0006d;color:#fff;box-shadow:0 7px 16px rgba(160,0,109,.18);transition:background-color .15s,box-shadow .15s}
+[data-student-section="home"] .next-mission>button:not(:disabled):hover,[data-student-section="home"] .student-bonus-list .bonus-unlock-card>button:not(:disabled):hover{background:#041455;box-shadow:0 7px 16px rgba(4,20,85,.18)}
+.student-section-intro{margin-bottom:22px;gap:18px}
+.student-section-intro h2,.section-intro h2{letter-spacing:-.025em;font-size:28px}
+.student-section-intro p,.section-intro p{font-size:16px;line-height:1.5;color:var(--ui-muted)}
+.ui-toolbar{display:flex;align-items:flex-end;flex-wrap:wrap;gap:14px;margin:0 0 24px;padding:18px 20px;background:#fff;border:1px solid var(--ui-border);border-radius:18px;box-shadow:var(--ui-shadow)}
+.ui-search,.ui-select{display:grid;gap:8px;font-size:13px;font-weight:500;color:var(--ui-muted);min-width:0}
+.ui-search{flex:1 1 230px}
+.ui-select{flex:0 1 220px}
+.ui-toolbar input,.ui-toolbar select,.avatar-category-bar select{width:100%;height:46px;min-width:0;padding:10px 13px;background:#f8faff;border:1px solid #cfd9e8;border-radius:10px;color:var(--ink);font-size:15px}
+.ui-action{min-height:46px;padding:11px 18px;border:0;border-radius:11px;background:var(--navy);color:#fff;font-size:15px;font-weight:500}
+.ui-action:hover{background:#253b8d}
+.ui-filter-count{flex:1 0 100%;font-size:13px;margin:0;color:var(--ui-muted);min-height:18px}
+.ui-empty{padding:30px;text-align:center;background:white;border:1px dashed #c5d0e3;border-radius:16px;color:var(--ui-muted);font-size:16px}
+.challenge-path-group{border:1px solid var(--ui-border);border-radius:22px;box-shadow:var(--ui-shadow);padding:24px;margin-bottom:20px}
+.challenge-path-group>header h3{font-size:23px;line-height:1.25}
+.challenge-path-group>header>div>span{font-size:12px;letter-spacing:.08em}
+.mission-node{border-radius:16px;box-shadow:none}
+.mission-node h3{font-size:19px;line-height:1.3}
+.mission-node p{font-size:14px;line-height:1.45}
+.mission-node button{min-height:44px;border-radius:11px;font-size:14px}
+.mission-node button:not(:disabled){background:#a0006d;color:#fff;box-shadow:0 5px 12px rgba(160,0,109,.14);transition:background-color .15s,box-shadow .15s}
+.mission-node button:not(:disabled):hover{background:#7d0055;box-shadow:0 6px 15px rgba(125,0,85,.2)}
+.mission-node button:not(:disabled):focus-visible{outline-color:#7d0055}
+.mission-node.is-locked{opacity:.78;background:#f7f9fc}
+.mission-node.is-complete{border-color:#8dcab9;background:#f4fcf8}
+.challenge-top{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.challenge-back{flex:0 0 auto;min-height:32px;padding:6px 12px;border:1px solid #cbd8eb;border-radius:9px;background:white;color:var(--navy);font-size:13px;font-weight:500}
+.challenge-back:hover{background:#eaf2ff}
+.mission-tabs button{scroll-margin-top:80px}
+.mission-intro-screen .mission-brief{border-radius:20px}
+.begin-questions-button:hover,.student-welcome-card button:hover{transform:none}
+.challenge-options button:focus-visible{outline-color:#176bbd}
+.teacher-welcome{padding:26px 30px;border-radius:24px;background:linear-gradient(110deg,#edf2ff,#f7f4ff);border:1px solid #dfe5f6;margin-bottom:22px;color:var(--navy)}
+.teacher-welcome span{color:#3c50a9}
+.teacher-welcome h2{font-size:32px;letter-spacing:-.025em}
+.teacher-welcome p{font-size:16px;line-height:1.5;color:var(--ui-muted)}
+.teacher-welcome>img{width:112px;height:112px;object-fit:contain}
+.metric-grid{gap:16px}
+.metric-grid article{padding:21px;background:#fff}
+.metric-grid article>span{font-size:14px;color:var(--ui-muted)}
+.metric-grid article>strong{font-size:32px}
+.metric-grid article>small{font-size:13px;line-height:1.5;color:var(--ui-muted)}
+.teacher-panel{padding:24px}
+.panel-heading h3{font-size:20px}
+.panel-heading p{font-size:14px;line-height:1.45;color:var(--ui-muted)}
+.class-progress-row span,.recent-student strong,.recommendation strong{font-size:15px}
+.class-progress-row b,.recent-student small,.recommendation small{font-size:13px;color:var(--ui-muted);line-height:1.5}
+.section-intro{gap:18px}
+.admin-primary{min-height:46px;border-radius:12px;font-size:14px}
+.teacher-class-card{padding:24px}
+.teacher-class-card h3{font-size:23px}
+.teacher-class-card p,.teacher-class-card footer{font-size:14px;color:var(--ui-muted)}
+.class-code{flex-wrap:wrap;gap:8px 12px;padding:14px 16px;border-radius:12px}
+.class-code span{width:100%;font-size:11px}
+.class-code strong{font-size:17px;overflow-wrap:anywhere}
+.copy-code{border:1px solid #c5d3e8;border-radius:8px;padding:5px 10px;background:white;color:#203c85;min-height:34px;font-size:12px;margin-left:6px}
+.class-students-link{display:block;width:100%;min-height:44px;padding:10px 14px;border:0;border-radius:10px;background:#edf2ff;color:#233d85;font-size:14px;margin-top:18px}
+.admin-table-wrap{border:1px solid var(--ui-border);box-shadow:var(--ui-shadow);border-radius:18px}
+.admin-table th{background:#f1f5fc;color:#52627e;font-size:12px;letter-spacing:.025em}
+.admin-table td{font-size:14px;line-height:1.4;padding:18px 16px}
+.admin-table td small{font-size:12px;color:var(--ui-muted)}
+.teacher-name strong{font-size:15px}
+.table-actions button{min-width:40px;min-height:40px;border-radius:10px;font-size:19px}
+.access-code{font-size:13px;white-space:nowrap}
+.student-progress-card{padding:22px;gap:18px}
+.student-progress-card strong{font-size:16px}
+.student-progress-card small,.student-progress-card>span{font-size:13px;color:var(--ui-muted)}
+.error-row{font-size:14px}
+.report-note{font-size:15px;line-height:1.65;border-radius:14px}
+.report-summary article{border-radius:16px;padding:20px}
+.report-summary article span,.report-summary article small{font-size:13px;line-height:1.5;color:var(--ui-muted)}
+.report-controls label{font-size:14px}
+.report-controls select{min-height:44px;border-radius:10px}
+.approval-card{border:1px solid var(--ui-border);border-radius:18px;box-shadow:var(--ui-shadow);gap:18px;padding:24px}
+.approval-card strong{font-size:17px}
+.approval-card small{font-size:13px;line-height:1.5;color:var(--ui-muted)}
+.approval-card__actions button{min-height:44px;border-radius:10px;font-size:14px}
+.class-grid article,.track-grid article,.report-panel{border:1px solid var(--ui-border);border-radius:20px;box-shadow:var(--ui-shadow)}
+.class-grid article{padding:24px}
+.class-grid article h3{font-size:21px;line-height:1.3}
+.class-grid article p,.class-grid article footer{font-size:14px;line-height:1.45;color:var(--ui-muted)}
+.track-grid article{padding:22px;gap:18px}
+.track-grid article h3{font-size:20px;line-height:1.3}
+.track-grid article p,.track-grid article span{font-size:14px;line-height:1.5;color:var(--ui-muted)}
+.report-panel{padding:26px}
+.report-panel h3{font-size:21px}
+.report-panel p{font-size:14px;color:var(--ui-muted)}
+.space-shop{gap:20px}
+.space-card{padding:24px;background:#fff}
+.space-card p{font-size:15px;line-height:1.5;color:var(--ui-muted)}
+.space-card button{min-height:44px;border-radius:12px}
+.avatar-controls-wrapper{min-width:0}
+.avatar-category-bar{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:16px;padding:18px 20px;background:white;border:1px solid var(--ui-border);border-radius:18px}
+.avatar-category-bar label{font-size:16px;font-weight:500;line-height:1.4}
+.avatar-category-bar select{width:240px}
+.avatar-preview{background:linear-gradient(150deg,#eef3ff,#fff);padding:24px}
+.avatar-control-group{padding:22px;background:white}
+.avatar-control-group h3{font-size:19px}
+.avatar-choice-grid{gap:10px}
+.avatar-choice{border-radius:12px}
+.avatar-name-form input,.avatar-name-form button{min-height:44px;border-radius:10px}
+.achievement-grid article{padding:24px}
+.achievement-grid small{font-size:14px;color:var(--ui-muted)}
+.student-progress-hero{border-radius:24px}
+.student-progress-hero p{font-size:16px;line-height:1.5;color:var(--ui-muted)}
+.student-bottom-nav{display:none}
+.menu-backdrop{position:fixed;inset:0;border:0;background:#0b173870;backdrop-filter:blur(3px);z-index:45}
+.admin-modal{backdrop-filter:blur(5px);background:#0b173870}
+.admin-modal__card{border-radius:22px;box-shadow:0 24px 100px #08193533}
+.ui-help-dialog{border:1px solid var(--ui-border);border-radius:24px;padding:28px;max-width:580px;width:calc(100% - 32px);max-height:calc(100dvh - 40px);overflow:auto;color:var(--ink);box-shadow:0 25px 100px #091d4940}
+.ui-help-dialog::backdrop{background:#0b173870;backdrop-filter:blur(5px)}
+.ui-help-dialog header{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:18px}
+.ui-help-dialog h2{font-size:25px;margin:0;line-height:1.2}
+.ui-help-dialog header button{flex:0 0 44px;height:44px;border:0;border-radius:50%;background:#eef3fb;color:var(--navy);font-size:26px}
+.ui-help-dialog h3{font-size:18px;margin:22px 0 8px}
+.ui-help-dialog p{font-size:16px;line-height:1.6;color:var(--ui-muted);margin:8px 0 18px}
+.ui-toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);width:max-content;max-width:calc(100% - 32px);padding:14px 22px;background:#122866;color:white;border-radius:14px;z-index:300;box-shadow:0 10px 30px #10204830;font-size:15px;text-align:center}
+@media(min-width:951px){
+  .student-welcome-card{height:auto;min-height:250px}
+}
+@media(max-width:1100px) and (min-width:951px){
+  .student-content,.admin-content{padding-inline:24px}
+  .student-welcome-card{padding:26px}
+  .student-welcome-card .student-avatar-welcome{width:170px;height:170px;flex-basis:170px}
+}
+@media(max-width:950px){
+  .student-sidebar,.admin-sidebar{z-index:50;padding-top:60px;height:100dvh;overflow:auto}
+  .sidebar-close{display:grid;place-items:center;position:absolute;top:12px;right:14px;width:40px;height:40px;border:1px solid #ffffff40;border-radius:12px;background:#ffffff15;color:#fff;font-size:26px}
+  .student-content,.admin-content{padding:24px}
+  .auth-mobile-back{display:inline-flex;align-items:center;min-height:44px;padding:8px 0;margin-bottom:16px;border:0;background:transparent;color:var(--navy);font-size:14px}
+  .student-welcome-card .student-avatar-welcome{position:relative;right:auto;bottom:auto;flex-basis:175px;width:175px;height:175px}
+  .student-welcome-card{padding:26px;height:auto;min-height:0}
+  .student-welcome-card h2{font-size:30px}
+  .student-bonus-list{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:650px){
+  .topbar{height:82px;width:calc(100% - 32px)}
+  .topbar__logo{width:140px}
+  .topbar-links{gap:0}
+  .topbar-links button{font-size:13px;padding-inline:12px}
+  .topbar-links button:first-child{display:none}
+  .hero{padding-top:14px;padding-bottom:76px;min-height:0;gap:0}
+  .hero__copy{padding-left:0;text-align:left}
+  .hero h1{font-size:40px;line-height:1.1}
+  .hero__description{font-size:17px;line-height:1.5;margin:18px 0 22px}
+  .hero__actions{max-width:none;gap:14px}
+  .hero__actions .button{font-size:16px;min-height:56px}
+  .hero__trust{margin-top:24px}
+  .hero__visual{height:280px;min-height:0;margin-top:0;margin-bottom:24px;order:-1}
+  .hero__mascot{max-height:270px}
+  .home-footer{font-size:12px}
+  .home-footer button{font-size:13px;padding-inline:8px}
+  .auth-content{padding:24px 20px;align-items:flex-start}
+  .auth-mobile-back{display:flex;width:max-content;margin:0 0 12px}
+  .auth-content__inner h1{font-size:30px}
+  .auth-content__inner .step-label{font-size:11px}
+  .auth-lead{font-size:16px}
+  .profile-card{min-height:100px;padding:16px}
+  .student-header{height:100px;grid-template-columns:40px minmax(0,1fr);grid-template-rows:auto auto;column-gap:12px;row-gap:5px;padding:12px 18px;align-items:center}
+  .student-header>.student-menu{grid-column:1;grid-row:1 / 3;align-self:start;margin-top:2px}
+  .student-header>div:nth-child(2){display:block;grid-column:2;grid-row:1;min-width:0}
+  .student-header h1{font-size:21px;line-height:1.15;margin:2px 0 0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .student-header p{font-size:9px;letter-spacing:.08em;margin:0}
+  .student-wallet{grid-column:2;grid-row:2;justify-content:flex-start;gap:10px;flex-wrap:nowrap;padding:0;width:100%;margin-left:0}
+  .student-wallet>span{font-size:14px;padding:0;min-width:0;gap:5px;background:transparent;border:0;flex:0 1 auto}
+  .student-wallet>span b{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .student-wallet>span img{flex:0 0 22px}
+  .student-wallet>span img{width:22px;height:22px}
+  .student-wallet .fullscreen-button,.student-wallet .sound-button{width:32px;height:32px;min-height:32px;flex:0 0 32px}
+  .student-wallet .fullscreen-button{margin-left:auto}
+  .student-wallet .fullscreen-button i{display:none}
+  .student-wallet .sound-button svg{width:17px}
+  .student-content{padding:20px 16px 26px}
+  .student-main:has(.student-bottom-nav:not([hidden])) .student-content{padding-bottom:94px}
+  .admin-content{padding:22px 16px 30px}
+  .admin-header{min-height:82px;height:82px;padding-inline:16px;gap:12px}
+  .admin-header h1{font-size:23px;line-height:1.1}
+  .admin-header p{font-size:10px}
+  .student-welcome-card{padding:24px;min-height:0;gap:0;overflow:hidden}
+  .student-welcome-card>div:first-child{position:relative;z-index:2;width:100%;max-width:none}
+  .student-welcome-card h2{font-size:29px;padding-right:72px}
+  .student-welcome-card p{font-size:15px;line-height:1.5;max-width:100%;padding-right:0;margin:12px 0 18px}
+  .student-welcome-card>div:first-child>span{font-size:10px}
+  .student-welcome-card .student-avatar-welcome{position:absolute;top:6px;right:8px;bottom:auto;width:92px;height:92px;opacity:.95}
+  .student-welcome-card button{min-height:48px;font-size:15px;padding:12px 16px;width:100%}
+  .student-stat-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:16px 0}
+  .student-stat-grid article{padding:16px;border-radius:16px}
+  .student-stat-grid article:first-child{grid-column:1 / -1;display:grid;grid-template-columns:1fr auto;align-items:center;gap:8px}
+  .student-stat-grid article:first-child strong{grid-column:2;grid-row:1;margin:0;font-size:27px}
+  .student-stat-grid article:first-child>i{grid-column:1 / -1;margin:0}
+  .student-stat-grid article>span{font-size:13px;line-height:1.3}
+  .student-stat-grid article strong{font-size:28px;margin:7px 0}
+  .student-stat-grid article small{font-size:12px}
+  .student-panel{padding:20px}
+  .student-panel__heading h3{font-size:19px}
+  .student-home-grid{gap:16px}
+  .student-bonus-list{grid-template-columns:1fr;gap:14px}
+  .student-bonus-list .bonus-unlock-card{padding:20px}
+  .student-section-intro{align-items:flex-start;margin-bottom:18px}
+  .student-section-intro h2,.section-intro h2{font-size:25px;line-height:1.2}
+  .student-section-intro p,.section-intro p{font-size:15px}
+  .path-progress,.collection-count{min-width:60px;flex:0 0 60px}
+  .ui-toolbar{padding:16px;gap:14px;margin-bottom:18px}
+  .ui-search,.ui-select{flex:1 0 100%}
+  .ui-toolbar>.ui-action{width:100%}
+  .ui-filter-count{font-size:12px}
+  .challenge-path-group{padding:18px;border-radius:18px;margin-bottom:18px}
+  .challenge-path-group>header{align-items:flex-start;gap:12px}
+  .challenge-path-group>header h3{font-size:21px}
+  .challenge-path-group>header>b{font-size:11px;white-space:nowrap}
+  .mission-node{padding:18px}
+  .mission-node h3{font-size:19px}
+  .challenge-top{gap:8px;align-items:flex-start}
+  .challenge-top h2{font-size:19px;line-height:1.3}
+  .challenge-back{font-size:12px;min-height:40px;padding:8px 10px}
+  .teacher-welcome{padding:22px;gap:12px}
+  .teacher-welcome h2{font-size:27px}
+  .teacher-welcome p{font-size:15px}
+  .teacher-welcome>img{width:78px;height:78px}
+  .metric-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .metric-grid article{padding:16px;border-radius:16px}
+  .metric-grid article>span{font-size:13px;line-height:1.3;min-height:34px}
+  .metric-grid article>strong{font-size:29px}
+  .metric-grid article>small{font-size:12px}
+  .teacher-panel{padding:20px}
+  .panel-heading h3{font-size:19px}
+  .class-progress-row{font-size:13px}
+  .section-intro{align-items:flex-start;gap:14px}
+  .section-intro>.admin-primary{width:100%}
+  .teacher-class-card{padding:22px}
+  .admin-table-wrap{border:0;background:transparent;box-shadow:none;overflow:visible}
+  .admin-table{display:block;min-width:0!important;width:100%}
+  .admin-table thead{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+  .admin-table tbody{display:grid;gap:14px}
+  .admin-table tr{display:block;background:white;border:1px solid var(--ui-border);border-radius:18px;padding:18px;box-shadow:var(--ui-shadow)}
+  .admin-table td{display:flex;justify-content:space-between;align-items:center;gap:16px;width:100%;padding:10px 0;border:0;min-height:44px;text-align:right;font-size:14px}
+  .admin-table td::before{content:attr(data-label);font-size:12px;color:var(--ui-muted);text-align:left;flex:0 0 60px}
+  .admin-table td:first-child{padding:0 0 14px;border-bottom:1px solid #edf1f7;text-align:left}
+  .admin-table td:first-child::before,.admin-table td[colspan]::before{display:none}
+  .admin-table .teacher-name{min-width:0;max-width:100%}
+  .admin-table .teacher-name span{min-width:0}
+  .admin-table .teacher-name small{overflow-wrap:anywhere;white-space:normal}
+  .admin-table td:has(.access-code){flex-wrap:wrap;justify-content:flex-start;gap:10px}
+  .admin-table td:has(.access-code)::before{margin-right:auto}
+  .copy-code{min-height:40px;margin-left:0}
+  .student-progress-card{padding:20px;grid-template-columns:1fr auto;gap:12px}
+  .student-progress-card>div:first-child{grid-column:1 / -1}
+  .student-progress-card .progress-bar{grid-column:1;grid-row:2}
+  .student-progress-card>b{grid-column:2;grid-row:2}
+  .student-progress-card>span{grid-column:1 / -1}
+  .approval-card{padding:20px;flex-wrap:wrap}
+  .approval-card small{overflow-wrap:anywhere}
+  .approval-card__actions{width:100%;display:flex}
+  .approval-card__actions button{flex:1}
+  .class-grid article,.track-grid article,.report-panel{padding:20px}
+  .track-grid article{gap:12px}
+  .avatar-layout{display:flex;flex-direction:column;gap:18px}
+  .avatar-preview{position:static;display:grid;grid-template-columns:105px minmax(0,1fr);grid-template-rows:auto auto;align-items:center;gap:2px 16px;padding:18px;min-height:0}
+  .avatar-preview>.avatar-image-stage{grid-row:1 / 3;width:105px;height:130px;min-height:0;margin:0}
+  .avatar-preview h3{font-size:22px;align-self:end;margin:0;overflow-wrap:anywhere}
+  .avatar-preview>p{font-size:14px;align-self:start;line-height:1.4;margin:6px 0 0}
+  .avatar-category-bar{flex-direction:column;align-items:stretch;padding:18px;gap:10px}
+  .avatar-category-bar select{width:100%}
+  .avatar-control-group{padding:18px;border-radius:18px}
+  .avatar-choice-grid{gap:8px}
+  .avatar-choice{min-height:76px}
+  .space-shop{gap:16px}
+  .space-card{padding:20px}
+  .student-bottom-nav{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));position:fixed;bottom:0;left:0;right:0;padding:6px 12px calc(6px + env(safe-area-inset-bottom));background:#ffffffed;border-top:1px solid #d7e0ef;backdrop-filter:blur(16px);box-shadow:0 -4px 22px #20375808;z-index:30}
+  .student-bottom-nav button{display:grid;place-items:center;gap:3px;min-height:56px;padding:6px;border:0;border-radius:12px;background:transparent;color:var(--ui-muted);font-size:12px}
+  .student-bottom-nav button>span{font-size:21px;line-height:1}
+  .student-bottom-nav button.is-active{background:#edf1ff;color:#3436ad;font-weight:500}
+  .ui-toast{bottom:88px}
+  .ui-help-dialog{padding:22px;border-radius:20px}
+  .ui-help-dialog h2{font-size:23px}
+  .success-card{padding:28px 22px;border-radius:24px}
+  .success-card h1{font-size:34px;line-height:1.15}
+  .success-card>img{height:170px}
+  .success-check{top:155px}
+}
+@media(prefers-reduced-motion:reduce){.screen--active{animation:none}html{scroll-behavior:auto}.ui-action,.profile-card{transition:none}}

@@ -1,0 +1,5 @@
+Missão 1: dez rodadas, escolha do maior, nova tentativa e conclusão verificadas.
+Missão 2: alvos 10/15/20, validação da resposta e bloqueio de novas cartas verificados.
+Missão 3: uma carta por questão, avanço após acerto ou erro, resolução e recompensas verificados.
+Rejogar: nenhuma recompensa duplicada. Layout verificado em 1280, 375 e 320 px.
+Progresso preservado ao entrar novamente; nenhum erro de JavaScript.

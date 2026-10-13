@@ -1,0 +1,48 @@
+.challenge-options.enigma-activity{display:block}
+.enigma-game{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:center;border:1px solid #dce3f2;border-radius:20px;padding:18px;background:radial-gradient(circle at 12% 12%,rgba(117,221,255,.2),transparent 35%),linear-gradient(145deg,#f8faff,#eef2ff)}
+.enigma-operation{--enigma-size:54px;width:max-content;max-width:100%;margin:auto;color:#041455;font-family:Fredoka,system-ui,sans-serif;font-variant-numeric:tabular-nums}
+.enigma-row{position:relative;display:grid;grid-template-columns:repeat(var(--enigma-columns),var(--enigma-size));align-items:center;justify-items:center;min-height:54px;font-size:39px}
+.enigma-transfers{min-height:32px;height:32px;font-size:21px;color:#a0006d}
+.enigma-transfers>span.is-active{display:grid;place-items:center;min-width:34px;height:28px;border:2px solid #e889c6;border-radius:9px;background:#fff0fa;animation:enigmaTransfer .95s ease calc(var(--enigma-transfer-order) * .45s) both}
+.enigma-transfers>span.is-borrowed{display:grid;place-items:center;min-width:34px;height:28px;border:2px solid #e889c6;border-radius:9px;background:#fff0fa;color:#a0006d}
+.enigma-top .is-regrouped{text-decoration:line-through;text-decoration-thickness:3px;text-decoration-color:#a0006d;color:#8b91a2}
+.enigma-sign{position:absolute;left:4px;font-size:39px;font-style:normal;color:#a0006d}
+.enigma-line{height:3px;margin:7px 0;background:linear-gradient(90deg,#4937df,#a0006d);border-radius:9px}
+.enigma-result{font-weight:600}
+.enigma-row input{box-sizing:border-box;display:grid;place-items:center;width:48px;height:48px;border:3px solid #4937df;border-radius:10px;background:#fff;color:#4937df;font-family:inherit;font-size:35px;text-align:center}
+.enigma-row input:focus{outline:3px solid rgba(160,0,109,.25);outline-offset:3px;border-color:#a0006d}
+.enigma-row input:disabled{opacity:1;-webkit-text-fill-color:currentColor}
+.enigma-help{margin:0 0 12px;color:#59647c;font-size:16px;line-height:1.4}
+.enigma-target{margin:0 0 12px;color:#4937df;font-size:16px}
+.enigma-target strong{font-family:Fredoka,system-ui,sans-serif;font-size:24px}
+.enigma-row input.is-correct{border-color:#06a77d;background:#e4fff7;color:#087b5e}
+.enigma-row input.is-wrong{border-color:#ef476f;background:#fff0f4;color:#bd3157}
+.enigma-result.is-correct{color:#087b5e}
+.enigma-result.is-wrong{color:#bd3157}
+.enigma-regroup{margin-top:12px;padding:10px 12px;border:1px solid #e2b2d3;border-radius:12px;background:#fff6fc;color:#6f315d;font-size:14px;line-height:1.45}
+.enigma-message{margin:0;color:#a0006d;font-size:14px;line-height:1.4}
+.enigma-message:not(:empty){margin-top:10px}
+.enigma-row .is-regroup-source{color:#a0006d;animation:enigmaPulse .95s ease both}
+@keyframes enigmaTransfer{0%{opacity:0;transform:translate(54px,80px) scale(.55)}55%{opacity:1;transform:translate(0,-4px) scale(1.15)}100%{transform:none}}
+@keyframes enigmaPulse{0%,100%{transform:none}40%{transform:scale(1.2)}}
+@media(min-width:951px){
+  .compact-challenge .enigma-game{padding:12px 18px;gap:12px 24px}
+  .compact-challenge .enigma-help{font-size:14px;margin-bottom:8px}
+  .compact-challenge .enigma-target{margin-bottom:8px;font-size:14px}
+  .compact-challenge .enigma-row{min-height:48px;font-size:36px}
+  .compact-challenge .enigma-transfers{height:30px;min-height:30px;font-size:20px}
+  .compact-challenge .enigma-regroup{padding:8px 10px;margin-top:8px;font-size:13px}
+}
+@media(max-width:650px){
+  .enigma-game{grid-template-columns:1fr;gap:12px;padding:14px 10px}
+  .enigma-operation{--enigma-size:48px}
+  .enigma-row{min-height:49px;font-size:34px}
+  .enigma-transfers{min-height:30px;height:30px;font-size:19px}
+  .enigma-row input{width:44px;height:44px;font-size:31px}
+  .enigma-sign{font-size:34px}
+  .enigma-help,.enigma-target{text-align:center;margin-bottom:8px;font-size:14px}
+  .enigma-regroup{font-size:13px;margin-top:10px}
+}
+@media(prefers-reduced-motion:reduce){
+  .enigma-transfers>span.is-active,.enigma-row .is-regroup-source{animation:none}
+}

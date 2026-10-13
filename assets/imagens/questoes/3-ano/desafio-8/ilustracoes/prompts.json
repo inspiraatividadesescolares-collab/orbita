@@ -1,0 +1,199 @@
+{
+  "generator": "Built-in image_gen.imagegen",
+  "transparent_background": true,
+  "created": "2026-10-02",
+  "assets": [
+    {
+      "id": "lapis-cor",
+      "kind": "objects",
+      "subject": "Lápis de cor",
+      "path": "objects/lapis-cor.png",
+      "prompt": "Use case: stylized-concept. Asset type: transparent product illustration for a Brazilian primary-school math shopping game. Subject: one open cardboard box of twelve colored pencils, with the pencil tips and bright varied colors clearly visible. Style: premium playful 3D educational illustration, rounded but recognizable shapes, rich matte materials, soft studio lighting and subtle natural object shadow, crisp polished edges, warm friendly feel. Composition: single centered object occupying about 85 percent of a square canvas, front three-quarter view, entire object fully inside the frame. Background: genuinely transparent alpha. No people, no currency, no letters, no numbers, no brand names, no logo, no watermark, no scene or colored background. This is an individual game product cutout, large and legible at 150 pixels.",
+      "original": "C:\\Users\\ednei\\.codex\\generated_images\\01a0fc0b-c6d8-7621-a1a6-48037771dc26\\exec-3ed45cc2-d9d3-48f8-afe1-db5805c56afd.png"
+    },
+    {
+      "id": "livro",
+      "kind": "objects",
+      "subject": "one closed hardcover children's storybook with a cheerful teal cover and a small embossed star, visible paper pages, no writing",
+      "path": "objects/livro.png",
+      "prompt": "Use case: stylized-concept. Asset type: transparent product illustration for a Brazilian primary-school math shopping game. Subject: one closed hardcover children's storybook with a cheerful teal cover and a small embossed star, visible paper pages, no writing. Style: premium playful 3D educational illustration, rounded but recognizable shapes, rich matte materials, soft studio lighting and subtle natural object shadow, crisp polished edges, warm friendly feel. Composition: one centered compact object or the specified product set occupying about 85 percent of a square canvas, entire object fully inside the frame, clear front three-quarter view. Background: genuinely transparent alpha. No people, no currency, no letters, no brand names, no logo, no watermark, no scene or colored background. Large and legible at 150 pixels.",
+      "original": "C:\\Users\\ednei\\.codex\\generated_images\\01a0fc0b-c6d8-7621-a1a6-48037771dc26\\exec-fd9d5b2a-40dc-4f87-a75a-e4eada9638b2.png"
+    },
+    {
+      "id": "kit-pintura",
+      "kind": "objects",
+      "subject": "one complete children's painting kit: a small rainbow watercolor palette, two brushes and three closed small paint jars arranged together as one compact set, no labels",
+      "path": "objects/kit-pintura.png",
+      "prompt": "Use case: stylized-concept. Asset type: transparent product illustration for a Brazilian primary-school math shopping game. Subject: one complete children's painting kit: a small rainbow watercolor palette, two brushes and three closed small paint jars arranged together as one compact set, no labels. Style: premium playful 3D educational illustration, rounded but recognizable shapes, rich matte materials, soft studio lighting and subtle natural object shadow, crisp polished edges, warm friendly feel. Composition: one centered compact object or the specified product set occupying about 85 percent of a square canvas, entire object fully inside the frame, clear front three-quarter view. Background: genuinely transparent alpha. No people, no currency, no letters, no brand names, no logo, no watermark, no scene or colored background. Large and legible at 150 pixels.",
+      "original": "C:\\Users\\ednei\\.codex\\generated_images\\01a0fc0b-c6d8-7621-a1a6-48037771dc26\\exec-4c202309-6130-47fe-b220-1ecb53635280.png"
+    },
+    {
+      "id": "jogo",
+      "kind": "objects",
+      "subject": "one colorful children's board game set: an open shallow box with a simple bright square board, four colored pawn pieces and one die, no letters or numbers",
+      "path": "objects/jogo.png",
+      "prompt": "Use case: stylized-concept. Asset type: transparent product illustration for a Brazilian primary-school math shopping game. Subject: one colorful children's board game set: an open shallow box with a simple bright square board, four colored pawn pieces and one die, no letters or numbers. Style: premium playful 3D educational illustration, rounded but recognizable shapes, rich matte materials, soft studio lighting and subtle natural object shadow, crisp polished edges, warm friendly feel. Composition: one centered compact object or the specified product set occupying about 85 percent of a square canvas, entire object fully inside the frame, clear front three-quarter view. Background: genuinely transparent alpha. No people, no currency, no letters, no brand names, no logo, no watermark, no scene or colored background. Large and legible at 150 pixels.",
+      "original": "C:\\Users\\ednei\\.codex\\generated_images\\01a0fc0b-c6d8-7621-a1a6-48037771dc26\\exec-380a34ee-4298-4484-80ac-6e69d44a8c05.png"
+    },
+    {
+      "id": "mochila",
+      "kind": "objects",
+      "subject": "one school backpack in bright purple with teal pockets and orange zipper tabs, front three-quarter view, no logo",
+      "path": "objects/mochila.png",
+      "prompt": "Use case: stylized-concept. Asset type: transparent product illustration for a Brazilian primary-school math shopping game. Subject: one school backpack in bright purple with teal pockets and orange zipper tabs, front three-quarter view, no logo. Style: premium playful 3D educational illustration, rounded but recognizable shapes, rich matte materials, soft studio lighting and subtle natural object shadow, crisp polished edges, warm friendly feel. Composition: one centered compact object or the specified product set occupying about 85 percent of a square canvas, entire object fully inside the frame, clear front three-quarter view. Background: genuinely transparent alpha. No people, no currency, no letters, no brand names, no logo, no watermark, no scene or colored background. Large and legible at 150 pixels.",
+      "original": "C:\\Users\\ednei\\.codex\\generated_images\\01a0fc0b-c6d8-7621-a1a6-48037771dc26\\exec-45fc3683-2c05-43ba-bcdd-bc8d981248cc.png"
+    },
+    {
+      "id": "bola",
+      "kind": "objects",
+      "subject": "one classic black and white soccer ball with soft rounded panels, three-quarter view",
+      "path": "objects/bola.png",
+      "prompt": "Use case: stylized-concept. Asset type: transparent product illustration for a Brazilian primary-school math shopping game. Subject: one classic black and white soccer ball with soft rounded panels, three-quarter view. Style: premium playful 3D educational illustration, rounded but recognizable shapes, rich matte materials, soft studio lighting and subtle natural object shadow, crisp polished edges, warm friendly feel. Composition: one centered compact object or the specified product set occupying about 85 percent of a square canvas, entire object fully inside the frame, clear front three-quarter view. Background: genuinely transparent alpha. No people, no currency, no letters, no brand names, no logo, no watermark, no scene or colored background. Large and legible at 150 pixels.",
+      "original": "C:\\Users\\ednei\\.codex\\generated_images\\01a0fc0b-c6d8-7621-a1a6-48037771dc26\\exec-1c63eb57-7947-4827-87f9-c96075581ba8.png"
+    },
+    {
+      "id": "tintas",
+      "kind": "objects",
+      "subject": "one compact set of six small colorful paint pots in red yellow green blue purple and orange, no writing or labels",
+      "path": "objects/tintas.png",
+      "prompt": "Use case: stylized-concept. Asset type: transparent product illustration for a Brazilian primary-school math shopping game. Subject: one compact set of six small colorful paint pots in red yellow green blue purple and orange, no writing or labels. Style: premium playful 3D educational illustration, rounded but recognizable shapes, rich matte materials, soft studio lighting and subtle natural object shadow, crisp polished edges, warm friendly feel. Composition: one centered compact object or the specified product set occupying about 85 percent of a square canvas, entire object fully inside the frame, clear front three-quarter view. Background: genuinely transparent alpha. No people, no currency, no letters, no brand names, no logo, no watermark, no scene or colored background. Large and legible at 150 pixels.",
+      "original": "C:\\Users\\ednei\\.codex\\generated_images\\01a0fc0b-c6d8-7621-a1a6-48037771dc26\\exec-71b2ce0f-79d9-4fec-a7b0-88677aa2a25d.png"
+    },
+    {
+      "id": "corda",
+      "kind": "objects",
+      "subject": "one neatly coiled colorful turquoise skipping rope with two orange handles, clearly recognizable as a jumping rope",
+      "path": "objects/corda.png",
+      "prompt": "Use case: stylized-concept. Asset type: transparent product illustration for a Brazilian primary-school math shopping game. Subject: one neatly coiled colorful turquoise skipping rope with two orange handles, clearly recognizable as a jumping rope. Style: premium playful 3D educational illustration, rounded but recognizable shapes, rich matte materials, soft studio lighting and subtle natural object shadow, crisp polished edges, warm friendly feel. Composition: one centered compact object or the specified product set occupying about 85 percent of a square canvas, entire object fully inside the frame, clear front three-quarter view. Background: genuinely transparent alpha. No people, no currency, no letters, no brand names, no logo, no watermark, no scene or colored background. Large and legible at 150 pixels.",
+      "original": "C:\\Users\\ednei\\.codex\\generated_images\\01a0fc0b-c6d8-7621-a1a6-48037771dc26\\exec-ed80fa30-9e93-4dd9-8d80-dc24a7514919.png"
+    },
+    {
+      "id": "pinceis",
+      "kind": "objects",
+      "subject": "one group of three children's painting brushes of different sizes with wooden handles and bright colored ends, arranged as a neat fan",
+      "path": "objects/pinceis.png",
+      "prompt": "Use case: stylized-concept. Asset type: transparent product illustration for a Brazilian primary-school math shopping game. Subject: one group of three children's painting brushes of different sizes with wooden handles and bright colored ends, arranged as a neat fan. Style: premium playful 3D educational illustration, rounded but recognizable shapes, rich matte materials, soft studio lighting and subtle natural object shadow, crisp polished edges, warm friendly feel. Composition: one centered compact object or the specified product set occupying about 85 percent of a square canvas, entire object fully inside the frame, clear front three-quarter view. Background: genuinely transparent alpha. No people, no currency, no letters, no brand names, no logo, no watermark, no scene or colored background. Large and legible at 150 pixels.",
+      "original": "C:\\Users\\ednei\\.codex\\generated_images\\01a0fc0b-c6d8-7621-a1a6-48037771dc26\\exec-e4ca0890-0b88-4199-a3f0-87f1c0204c75.png"
+    },
+    {
+      "id": "caderno",
+      "kind": "objects",
+      "subject": "one school spiral notebook with a cheerful blue cover and a simple embossed yellow star, visible metal spiral, no writing",
+      "path": "objects/caderno.png",
+      "prompt": "Use case: stylized-concept. Asset type: transparent product illustration for a Brazilian primary-school math shopping game. Subject: one school spiral notebook with a cheerful blue cover and a simple embossed yellow star, visible metal spiral, no writing. Style: premium playful 3D educational illustration, rounded but recognizable shapes, rich matte materials, soft studio lighting and subtle natural object shadow, crisp polished edges, warm friendly feel. Composition: one centered compact object or the specified product set occupying about 85 percent of a square canvas, entire object fully inside the frame, clear front three-quarter view. Background: genuinely transparent alpha. No people, no currency, no letters, no brand names, no logo, no watermark, no scene or colored background. Large and legible at 150 pixels.",
+      "original": "C:\\Users\\ednei\\.codex\\generated_images\\01a0fc0b-c6d8-7621-a1a6-48037771dc26\\exec-cb1248ca-bd9d-4c2a-8812-df680c2e4cc3.png"
+    },
+    {
+      "id": "carrinho",
+      "kind": "objects",
+      "subject": "one charming small red toy car with yellow accent and dark rubber wheels, three-quarter view, clearly a toy, no logos",
+      "path": "objects/carrinho.png",
+      "prompt": "Use case: stylized-concept. Asset type: transparent product illustration for a Brazilian primary-school math shopping game. Subject: one charming small red toy car with yellow accent and dark rubber wheels, three-quarter view, clearly a toy, no logos. Style: premium playful 3D educational illustration, rounded but recognizable shapes, rich matte materials, soft studio lighting and subtle natural object shadow, crisp polished edges, warm friendly feel. Composition: one centered compact object or the specified product set occupying about 85 percent of a square canvas, entire object fully inside the frame, clear front three-quarter view. Background: genuinely transparent alpha. No people, no currency, no letters, no brand names, no logo, no watermark, no scene or colored background. Large and legible at 150 pixels.",
+      "original": "C:\\Users\\ednei\\.codex\\generated_images\\01a0fc0b-c6d8-7621-a1a6-48037771dc26\\exec-5f238c23-10db-4d2f-aa58-6a31d64cc370.png"
+    },
+    {
+      "id": "lia",
+      "kind": "characters",
+      "subject": "Lia, a Brazilian primary-school girl about 8 years old, light skin, medium brown hair in two short pigtails, purple shirt",
+      "path": "characters/lia.png",
+      "prompt": "Use case: stylized-concept. Asset type: transparent character portrait for a Brazilian primary-school math game. Subject: Lia, a Brazilian primary-school girl about 8 years old, light skin, medium brown hair in two short pigtails, purple shirt. Style: premium playful 3D educational character, warm friendly closed-mouth smile, expressive natural eyes, rounded but believable facial proportions, smooth matte materials and subtle hair texture, soft studio lighting, polished and welcoming. Composition: one centered head-and-shoulders portrait, looking directly at the viewer; show the full hairstyle and shoulders, chest-up with lower torso cropped naturally at the bottom, occupying 85 percent of a square canvas. Background: genuinely transparent alpha. No props, no money, no text, no label, no logo, no watermark, no frame, no colored backdrop. High-quality individual character cutout, clear and recognizable at 120 pixels.",
+      "original": "C:\\Users\\ednei\\.codex\\generated_images\\01a0fc0b-c6d8-7621-a1a6-48037771dc26\\exec-94c345cc-4288-49a7-9150-0b2bbec35fdc.png"
+    },
+    {
+      "id": "tenis",
+      "kind": "objects",
+      "subject": "one pair of children's sneakers with turquoise fabric, purple accents and white laces and soles, three-quarter view, no logo",
+      "path": "objects/tenis.png",
+      "prompt": "Use case: stylized-concept. Asset type: transparent product illustration for a Brazilian primary-school math shopping game. Subject: one pair of children's sneakers with turquoise fabric, purple accents and white laces and soles, three-quarter view, no logo. Style: premium playful 3D educational illustration, rounded but recognizable shapes, rich matte materials, soft studio lighting and subtle natural object shadow, crisp polished edges, warm friendly feel. Composition: one centered compact object or the specified product set occupying about 85 percent of a square canvas, entire object fully inside the frame, clear front three-quarter view. Background: genuinely transparent alpha. No people, no currency, no letters, no brand names, no logo, no watermark, no scene or colored background. Large and legible at 150 pixels.",
+      "original": "C:\\Users\\ednei\\.codex\\generated_images\\01a0fc0b-c6d8-7621-a1a6-48037771dc26\\exec-d94ef716-db25-4eca-aa6a-60598116c3da.png"
+    },
+    {
+      "id": "ravi",
+      "kind": "characters",
+      "subject": "Ravi, a Brazilian primary-school boy about 8 years old, dark brown skin, short curly black hair, teal shirt",
+      "path": "characters/ravi.png",
+      "prompt": "Use case: stylized-concept. Asset type: transparent character portrait for a Brazilian primary-school math game. Subject: Ravi, a Brazilian primary-school boy about 8 years old, dark brown skin, short curly black hair, teal shirt. Style: premium playful 3D educational character, warm friendly closed-mouth smile, expressive natural eyes, rounded but believable facial proportions, smooth matte materials and subtle hair texture, soft studio lighting, polished and welcoming. Composition: one centered head-and-shoulders portrait, looking directly at the viewer; show the full hairstyle and shoulders, chest-up with lower torso cropped naturally at the bottom, occupying 85 percent of a square canvas. Background: genuinely transparent alpha. No props, no money, no text, no label, no logo, no watermark, no frame, no colored backdrop. High-quality individual character cutout, clear and recognizable at 120 pixels.",
+      "original": "C:\\Users\\ednei\\.codex\\generated_images\\01a0fc0b-c6d8-7621-a1a6-48037771dc26\\exec-5c98870e-f05b-4df0-9ede-3ecf349b3677.png"
+    },
+    {
+      "id": "brinquedo",
+      "kind": "objects",
+      "subject": "one soft golden-brown teddy bear plush toy sitting upright, round ears and a friendly stitched face, no clothes or writing",
+      "path": "objects/brinquedo.png",
+      "prompt": "Use case: stylized-concept. Asset type: transparent product illustration for a Brazilian primary-school math shopping game. Subject: one soft golden-brown teddy bear plush toy sitting upright, round ears and a friendly stitched face, no clothes or writing. Style: premium playful 3D educational illustration, rounded but recognizable shapes, rich matte materials, soft studio lighting and subtle natural object shadow, crisp polished edges, warm friendly feel. Composition: one centered compact object or the specified product set occupying about 85 percent of a square canvas, entire object fully inside the frame, clear front three-quarter view. Background: genuinely transparent alpha. No people, no currency, no letters, no brand names, no logo, no watermark, no scene or colored background. Large and legible at 150 pixels.",
+      "original": "C:\\Users\\ednei\\.codex\\generated_images\\01a0fc0b-c6d8-7621-a1a6-48037771dc26\\exec-b7d803e1-e8ca-4605-939f-6c14343be841.png"
+    },
+    {
+      "id": "bia",
+      "kind": "characters",
+      "subject": "Bia, a Brazilian primary-school girl about 8 years old, medium brown skin, dark wavy hair in a ponytail, coral shirt",
+      "path": "characters/bia.png",
+      "prompt": "Use case: stylized-concept. Asset type: transparent character portrait for a Brazilian primary-school math game. Subject: Bia, a Brazilian primary-school girl about 8 years old, medium brown skin, dark wavy hair in a ponytail, coral shirt. Style: premium playful 3D educational character, warm friendly closed-mouth smile, expressive natural eyes, rounded but believable facial proportions, smooth matte materials and subtle hair texture, soft studio lighting, polished and welcoming. Composition: one centered head-and-shoulders portrait, looking directly at the viewer; show the full hairstyle and shoulders, chest-up with lower torso cropped naturally at the bottom, occupying 85 percent of a square canvas. Background: genuinely transparent alpha. No props, no money, no text, no label, no logo, no watermark, no frame, no colored backdrop. High-quality individual character cutout, clear and recognizable at 120 pixels.",
+      "original": "C:\\Users\\ednei\\.codex\\generated_images\\01a0fc0b-c6d8-7621-a1a6-48037771dc26\\exec-c0c87d9c-7282-4a4f-9e8d-06e218747476.png"
+    },
+    {
+      "id": "teo",
+      "kind": "characters",
+      "subject": "Téo, a Brazilian primary-school boy about 8 years old, light skin, short chestnut hair with a side part, blue shirt",
+      "path": "characters/teo.png",
+      "prompt": "Use case: stylized-concept. Asset type: transparent character portrait for a Brazilian primary-school math game. Subject: Téo, a Brazilian primary-school boy about 8 years old, light skin, short chestnut hair with a side part, blue shirt. Style: premium playful 3D educational character, warm friendly closed-mouth smile, expressive natural eyes, rounded but believable facial proportions, smooth matte materials and subtle hair texture, soft studio lighting, polished and welcoming. Composition: one centered head-and-shoulders portrait, looking directly at the viewer; show the full hairstyle and shoulders, chest-up with lower torso cropped naturally at the bottom, occupying 85 percent of a square canvas. Background: genuinely transparent alpha. No props, no money, no text, no label, no logo, no watermark, no frame, no colored backdrop. High-quality individual character cutout, clear and recognizable at 120 pixels.",
+      "original": "C:\\Users\\ednei\\.codex\\generated_images\\01a0fc0b-c6d8-7621-a1a6-48037771dc26\\exec-aa7abca9-3855-4e74-b626-8ee5eb186dde.png"
+    },
+    {
+      "id": "joao",
+      "kind": "characters",
+      "subject": "João, a Brazilian primary-school boy about 8 years old, medium brown skin, short curly dark hair, mustard yellow shirt",
+      "path": "characters/joao.png",
+      "prompt": "Use case: stylized-concept. Asset type: transparent character portrait for a Brazilian primary-school math game. Subject: João, a Brazilian primary-school boy about 8 years old, medium brown skin, short curly dark hair, mustard yellow shirt. Style: premium playful 3D educational character, warm friendly closed-mouth smile, expressive natural eyes, rounded but believable facial proportions, smooth matte materials and subtle hair texture, soft studio lighting, polished and welcoming. Composition: one centered head-and-shoulders portrait, looking directly at the viewer; show the full hairstyle and shoulders, chest-up with lower torso cropped naturally at the bottom, occupying 85 percent of a square canvas. Background: genuinely transparent alpha. No props, no money, no text, no label, no logo, no watermark, no frame, no colored backdrop. High-quality individual character cutout, clear and recognizable at 120 pixels.",
+      "original": "C:\\Users\\ednei\\.codex\\generated_images\\01a0fc0b-c6d8-7621-a1a6-48037771dc26\\exec-89a5a68e-247d-496a-959f-a86f7e5ab2a2.png"
+    },
+    {
+      "id": "duda",
+      "kind": "characters",
+      "subject": "Duda, a Brazilian primary-school girl about 8 years old, dark brown skin, black curly hair in two puff buns, violet shirt",
+      "path": "characters/duda.png",
+      "prompt": "Use case: stylized-concept. Asset type: transparent character portrait for a Brazilian primary-school math game. Subject: Duda, a Brazilian primary-school girl about 8 years old, dark brown skin, black curly hair in two puff buns, violet shirt. Style: premium playful 3D educational character, warm friendly closed-mouth smile, expressive natural eyes, rounded but believable facial proportions, smooth matte materials and subtle hair texture, soft studio lighting, polished and welcoming. Composition: one centered head-and-shoulders portrait, looking directly at the viewer; show the full hairstyle and shoulders, chest-up with lower torso cropped naturally at the bottom, occupying 85 percent of a square canvas. Background: genuinely transparent alpha. No props, no money, no text, no label, no logo, no watermark, no frame, no colored backdrop. High-quality individual character cutout, clear and recognizable at 120 pixels.",
+      "original": "C:\\Users\\ednei\\.codex\\generated_images\\01a0fc0b-c6d8-7621-a1a6-48037771dc26\\exec-e8ccb0f7-b539-4457-b419-ba16c489b90d.png"
+    },
+    {
+      "id": "nina",
+      "kind": "characters",
+      "subject": "Nina, a Brazilian primary-school girl about 8 years old, light skin, straight dark brown shoulder-length hair with a teal hairband, pink shirt",
+      "path": "characters/nina.png",
+      "prompt": "Use case: stylized-concept. Asset type: transparent character portrait for a Brazilian primary-school math game. Subject: Nina, a Brazilian primary-school girl about 8 years old, light skin, straight dark brown shoulder-length hair with a teal hairband, pink shirt. Style: premium playful 3D educational character, warm friendly closed-mouth smile, expressive natural eyes, rounded but believable facial proportions, smooth matte materials and subtle hair texture, soft studio lighting, polished and welcoming. Composition: one centered head-and-shoulders portrait, looking directly at the viewer; show the full hairstyle and shoulders, chest-up with lower torso cropped naturally at the bottom, occupying 85 percent of a square canvas. Background: genuinely transparent alpha. No props, no money, no text, no label, no logo, no watermark, no frame, no colored backdrop. High-quality individual character cutout, clear and recognizable at 120 pixels.",
+      "original": "C:\\Users\\ednei\\.codex\\generated_images\\01a0fc0b-c6d8-7621-a1a6-48037771dc26\\exec-f8659197-d7c6-4f77-a096-47c93c2cdd5e.png"
+    },
+    {
+      "id": "ivo",
+      "kind": "characters",
+      "subject": "Ivo, a Brazilian primary-school boy about 8 years old, dark brown skin, short textured black hair, orange shirt",
+      "path": "characters/ivo.png",
+      "prompt": "Use case: stylized-concept. Asset type: transparent character portrait for a Brazilian primary-school math game. Subject: Ivo, a Brazilian primary-school boy about 8 years old, dark brown skin, short textured black hair, orange shirt. Style: premium playful 3D educational character, warm friendly closed-mouth smile, expressive natural eyes, rounded but believable facial proportions, smooth matte materials and subtle hair texture, soft studio lighting, polished and welcoming. Composition: one centered head-and-shoulders portrait, looking directly at the viewer; show the full hairstyle and shoulders, chest-up with lower torso cropped naturally at the bottom, occupying 85 percent of a square canvas. Background: genuinely transparent alpha. No props, no money, no text, no label, no logo, no watermark, no frame, no colored backdrop. High-quality individual character cutout, clear and recognizable at 120 pixels.",
+      "original": "C:\\Users\\ednei\\.codex\\generated_images\\01a0fc0b-c6d8-7621-a1a6-48037771dc26\\exec-5ae9de2a-5903-43ae-a9b6-9b96ed984d20.png"
+    },
+    {
+      "id": "caio",
+      "kind": "characters",
+      "subject": "Caio, a Brazilian primary-school boy about 8 years old, dark brown skin, short curly dark hair, royal blue shirt",
+      "path": "characters/caio.png",
+      "prompt": "Use case: stylized-concept. Asset type: transparent character portrait for a Brazilian primary-school math game. Subject: Caio, a Brazilian primary-school boy about 8 years old, dark brown skin, short curly dark hair, royal blue shirt. Style: premium playful 3D educational character, warm friendly closed-mouth smile, expressive natural eyes, rounded but believable facial proportions, smooth matte materials and subtle hair texture, soft studio lighting, polished and welcoming. Composition: one centered head-and-shoulders portrait, looking directly at the viewer; show the full hairstyle and shoulders, chest-up with lower torso cropped naturally at the bottom, occupying 85 percent of a square canvas. Background: genuinely transparent alpha. No props, no money, no text, no label, no logo, no watermark, no frame, no colored backdrop. High-quality individual character cutout, clear and recognizable at 120 pixels.",
+      "original": "C:\\Users\\ednei\\.codex\\generated_images\\01a0fc0b-c6d8-7621-a1a6-48037771dc26\\exec-72e83fe0-992a-4491-8086-61519703870d.png"
+    },
+    {
+      "id": "ana",
+      "kind": "characters",
+      "subject": "Ana, a Brazilian primary-school girl about 8 years old, medium brown skin, curly dark hair in a single high bun, teal shirt",
+      "path": "characters/ana.png",
+      "prompt": "Use case: stylized-concept. Asset type: transparent character portrait for a Brazilian primary-school math game. Subject: Ana, a Brazilian primary-school girl about 8 years old, medium brown skin, curly dark hair in a single high bun, teal shirt. Style: premium playful 3D educational character, warm friendly closed-mouth smile, expressive natural eyes, rounded but believable facial proportions, smooth matte materials and subtle hair texture, soft studio lighting, polished and welcoming. Composition: one centered head-and-shoulders portrait, looking directly at the viewer; show the full hairstyle and shoulders, chest-up with lower torso cropped naturally at the bottom, occupying 85 percent of a square canvas. Background: genuinely transparent alpha. No props, no money, no text, no label, no logo, no watermark, no frame, no colored backdrop. High-quality individual character cutout, clear and recognizable at 120 pixels.",
+      "original": "C:\\Users\\ednei\\.codex\\generated_images\\01a0fc0b-c6d8-7621-a1a6-48037771dc26\\exec-15e385a5-2099-42e4-961b-b184272f5199.png"
+    },
+    {
+      "id": "beto",
+      "kind": "characters",
+      "subject": "Beto, a Brazilian primary-school boy about 8 years old, light skin, slightly tousled dark brown hair, green shirt",
+      "path": "characters/beto.png",
+      "prompt": "Use case: stylized-concept. Asset type: transparent character portrait for a Brazilian primary-school math game. Subject: Beto, a Brazilian primary-school boy about 8 years old, light skin, slightly tousled dark brown hair, green shirt. Style: premium playful 3D educational character, warm friendly closed-mouth smile, expressive natural eyes, rounded but believable facial proportions, smooth matte materials and subtle hair texture, soft studio lighting, polished and welcoming. Composition: one centered head-and-shoulders portrait, looking directly at the viewer; show the full hairstyle and shoulders, chest-up with lower torso cropped naturally at the bottom, occupying 85 percent of a square canvas. Background: genuinely transparent alpha. No props, no money, no text, no label, no logo, no watermark, no frame, no colored backdrop. High-quality individual character cutout, clear and recognizable at 120 pixels.",
+      "original": "C:\\Users\\ednei\\.codex\\generated_images\\01a0fc0b-c6d8-7621-a1a6-48037771dc26\\exec-a76fab22-8d51-4544-b4a9-f3d2152ebc1a.png"
+    }
+  ]
+}

@@ -1,0 +1,741 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#071c63" />
+    <meta
+      name="description"
+      content="Órbita — uma aventura matemática para estudantes dos anos iniciais."
+    />
+    <link rel="icon" href="assets/imagens/logos/favicon.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="money-missions.css" />
+    <link rel="stylesheet" href="arithmetic-enigmas.css" />
+    <link rel="stylesheet" href="jar-missions.css" />
+    <link rel="stylesheet" href="tape-missions.css" />
+    <link rel="stylesheet" href="weight-missions.css" />
+    <link rel="stylesheet" href="cross-operations.css" />
+    <link rel="stylesheet" href="order-multiplication.css" />
+    <link rel="stylesheet" href="division-missions.css" />
+    <link rel="stylesheet" href="platform-ui.css" />
+    <link rel="stylesheet" href="explore.css" />
+    <link rel="stylesheet" href="multiplication-groups.css" />
+    <title>Órbita — Explorar, divertir, aprender</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
+    <main class="app-shell">
+      <section class="screen screen--active" data-screen="home" aria-labelledby="home-title">
+        <header class="topbar">
+          <img class="topbar__logo" src="assets/imagens/logos/logo-horizontal-sf.png" alt="Órbita" />
+          <nav class="topbar-links" aria-label="Acesso rápido"><button type="button" data-ui-help="access">Como acessar</button><button type="button" data-shortcut-login>Entrar →</button></nav>
+        </header>
+
+        <div class="hero container">
+          <div class="hero__copy">
+            <h1 id="home-title">Aprender matemática pode ser uma grande aventura!</h1>
+            <p class="hero__description">
+              Missões, descobertas e jogos para aprender no seu ritmo. Uma jornada matemática para os anos iniciais.
+            </p>
+
+            <div class="hero__actions" aria-label="Ações principais">
+              <button class="button button--primary" type="button" data-go="profiles" data-intent="register">
+                <span class="button__icon"><img src="assets/imagens/design/cadastrar.png" alt="" /></span>
+                Sou professor: criar conta
+                <span class="button__arrow" aria-hidden="true">→</span>
+              </button>
+              <button class="button button--secondary" type="button" data-go="profiles" data-intent="login">
+                <span class="button__icon"><img src="assets/imagens/design/entrar.png" alt="" /></span>
+                Entrar na Órbita
+                <span class="button__arrow button__arrow--placeholder" aria-hidden="true">→</span>
+              </button>
+            </div>
+
+            <div class="hero__trust">
+              <span class="mini-avatars" aria-hidden="true"><i>1</i><i>2</i><i>3</i></span>
+              <p><strong>Aprendizado seguro e divertido</strong><br />Para estudantes, famílias e escolas.</p>
+            </div>
+          </div>
+
+          <div class="hero__visual" aria-hidden="true">
+            <div class="orbit orbit--one"></div>
+            <div class="orbit orbit--two"></div>
+            <div class="planet planet--pink"></div>
+            <div class="planet planet--yellow"></div>
+            <span class="math-star math-star--one">×</span>
+            <span class="math-star math-star--two">+</span>
+            <span class="spark spark--one">✦</span>
+            <span class="spark spark--two">✦</span>
+            <div class="mascot-glow"></div>
+            <img class="hero__mascot" src="assets/imagens/logos/mascote.png" alt="" />
+            <div class="mission-card mission-card--top"><span>★</span><div><strong>+ 3 estrelas</strong><small>Missão completa!</small></div></div>
+            <div class="mission-card mission-card--bottom"><span>✓</span><div><strong>Você conseguiu!</strong><small>Continue explorando</small></div></div>
+          </div>
+        </div>
+
+        <footer class="home-footer container">
+          <span>© 2026 Órbita</span>
+          <nav aria-label="Links institucionais"><button type="button" data-ui-help="data">Sobre os dados</button><button type="button" data-ui-help="access">Ajuda</button></nav>
+        </footer>
+      </section>
+
+      <section class="screen auth-screen" data-screen="profiles" aria-labelledby="profiles-title" hidden>
+        <div class="auth-layout">
+          <aside class="auth-aside">
+            <button class="back-link back-link--light" type="button" data-back="home">← <span>Voltar ao início</span></button>
+            <div class="auth-aside__brand">
+              <img src="assets/imagens/logos/logo-horizontal-sf.png" alt="Órbita" />
+              <h2>Sua próxima descoberta começa aqui.</h2>
+              <p>Escolha como você vai embarcar nessa jornada.</p>
+            </div>
+            <img class="auth-aside__mascot" src="assets/imagens/logos/mascote.png" alt="Mascote da Órbita acenando" />
+            <span class="aside-orbit aside-orbit--one"></span><span class="aside-orbit aside-orbit--two"></span>
+          </aside>
+
+          <div class="auth-content auth-content--profiles">
+            <div class="auth-content__inner">
+              <p class="step-label">PASSO 1 DE 2</p>
+              <h1 id="profiles-title">Como você quer entrar?</h1>
+              <p class="auth-lead" data-profile-lead>Escolha seu perfil para criar uma nova conta.</p>
+
+              <div class="profile-grid">
+                <button class="profile-card" type="button" data-role="student">
+                  <span class="profile-card__art profile-card__art--student"><img src="assets/imagens/design/estudante.png" alt="" /></span>
+                  <span class="profile-card__copy"><strong>Estudante</strong><small>Aprenda e conquiste no seu ritmo.</small></span>
+                  <span class="profile-card__arrow" aria-hidden="true">→</span>
+                </button>
+                <button class="profile-card" type="button" data-role="teacher">
+                  <span class="profile-card__art profile-card__art--teacher"><img src="assets/imagens/design/professor.png" alt="" /></span>
+                  <span class="profile-card__copy"><strong>Professor</strong><small>Crie turmas e acompanhe cada jornada.</small></span>
+                  <span class="profile-card__arrow" aria-hidden="true">→</span>
+                </button>
+                <button class="profile-card" type="button" data-role="admin">
+                  <span class="profile-card__art profile-card__art--admin"><img src="assets/imagens/design/administrador.png" alt="" /></span>
+                  <span class="profile-card__copy"><strong>Administrador</strong><small>Organize e gerencie a plataforma.</small></span>
+                  <span class="profile-card__arrow" aria-hidden="true">→</span>
+                </button>
+              </div>
+
+              <p class="switch-intent" data-intent-switch>Já possui uma conta? <button type="button" data-toggle-intent>Entrar</button></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="screen auth-screen" data-screen="form" aria-labelledby="form-title" hidden>
+        <div class="auth-layout">
+          <aside class="auth-aside">
+            <button class="back-link back-link--light" type="button" data-back="profiles">← <span>Trocar perfil</span></button>
+            <div class="auth-aside__brand auth-aside__brand--form">
+              <img src="assets/imagens/logos/logo-horizontal-sf.png" alt="Órbita" />
+              <p class="aside-kicker" data-aside-kicker>ÁREA DO ESTUDANTE</p>
+              <h2 data-aside-title>Pronto para a próxima missão?</h2>
+              <p data-aside-copy>Entre com o código que seu professor compartilhou.</p>
+            </div>
+            <img class="auth-aside__mascot auth-aside__mascot--form" src="assets/imagens/logos/mascote.png" alt="Mascote da Órbita acenando" />
+            <span class="aside-orbit aside-orbit--one"></span><span class="aside-orbit aside-orbit--two"></span>
+          </aside>
+
+          <div class="auth-content">
+            <div class="auth-content__inner auth-content__inner--form">
+              <button class="back-link back-link--mobile" type="button" data-back="profiles">← Trocar perfil</button>
+              <p class="step-label" data-form-step>PASSO 2 DE 2</p>
+              <h1 id="form-title">Cadastro de estudante</h1>
+              <p class="auth-lead" data-form-lead>Preencha os dados abaixo para começar.</p>
+
+              <div class="role-pill"><img data-role-icon src="assets/imagens/design/estudante.png" alt="" /><span data-role-name>Estudante</span></div>
+
+              <form id="auth-form" novalidate>
+                <div class="google-wrap" data-google-wrap>
+                  <button class="google-button" type="button"><span class="google-g">G</span> Continuar com Google</button>
+                  <div class="divider"><span>ou continue com e-mail</span></div>
+                </div>
+
+                <div class="form-fields" data-form-fields></div>
+
+                <label class="checkbox-row" data-terms>
+                  <input type="checkbox" name="terms" />
+                  <span>Entendo como funcionam o <a href="#">cadastro</a> e o <a href="#">armazenamento dos dados</a> nesta plataforma.</span>
+                </label>
+
+                <button class="submit-button" type="submit"><span data-submit-label>Criar conta</span><span aria-hidden="true">→</span></button>
+                <p class="form-message" role="alert" aria-live="polite"></p>
+              </form>
+
+              <p class="switch-intent" data-form-switch>Já possui uma conta? <button type="button" data-toggle-intent>Entrar</button></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="screen success-screen" data-screen="success" aria-labelledby="success-title" hidden>
+        <div class="success-card">
+          <div class="success-card__stars" aria-hidden="true">✦ ★ ✦</div>
+          <img src="assets/imagens/logos/mascote.png" alt="Mascote da Órbita comemorando" />
+          <span class="success-check" aria-hidden="true">✓</span>
+          <p class="eyebrow"><span></span> Tudo pronto</p>
+          <h1 id="success-title">Bem-vindo à Órbita!</h1>
+          <p data-success-copy>Sua conta foi criada. Prepare-se para explorar um universo de descobertas.</p>
+          <button class="button button--primary" type="button" data-go="home">Voltar ao início <span class="button__arrow">→</span></button>
+        </div>
+      </section>
+
+      <section class="screen admin-screen" data-screen="admin" aria-labelledby="admin-page-title" hidden>
+        <aside class="admin-sidebar">
+          <img class="admin-sidebar__logo" src="assets/imagens/logos/logo-horizontal-sf.png" alt="Órbita" />
+          <div class="admin-profile">
+            <span class="admin-profile__avatar"><img src="assets/imagens/design/administrador.png" alt="" /></span>
+            <span><strong>Edneia Gomes</strong><small>Administradora</small></span>
+          </div>
+          <nav class="admin-nav" aria-label="Painel administrativo">
+            <button class="is-active" type="button" data-admin-view="approvals"><span><img src="assets/imagens/design/icone-autorização_files/icone-autorizacao.png" alt="" /></span> Autorizações <b data-pending-badge>2</b></button>
+            <button type="button" data-admin-view="teachers"><span><img src="assets/imagens/design/icone-professores_files/icone-professor.png" alt="" /></span> Professores</button>
+            <button type="button" data-admin-view="classes"><span><img src="assets/imagens/design/icone-minhas-turmas_files/icone-minhas-turmas.png" alt="" /></span> Turmas</button>
+            <button type="button" data-admin-view="tracks"><span><img src="assets/imagens/design/icone-trilha_files/icone-trilha.png" alt="" /></span> Trilhas</button>
+            <button type="button" data-admin-view="reports"><span><img src="assets/imagens/design/icone-relatorios_files/icone-relatorios.png" alt="" /></span> Relatórios de uso</button>
+          </nav>
+          <button class="admin-logout" type="button" data-admin-logout><span><img src="assets/imagens/design/icone-sair_files/icone-sair.png" alt="" /></span> Sair da conta</button>
+        </aside>
+
+        <div class="admin-main">
+          <header class="admin-header">
+            <button class="admin-menu" type="button" aria-label="Abrir menu" data-admin-menu>☰</button>
+            <div><p>PAINEL DO ADMINISTRADOR</p><h1 id="admin-page-title" data-admin-title>Autorizar cadastros</h1></div>
+            <span class="admin-header__date" data-current-date></span>
+          </header>
+
+          <div class="admin-content">
+            <section class="admin-view is-active" data-view="approvals">
+              <div class="section-intro"><div><h2>Solicitações de professores</h2><p>Analise os novos pedidos de acesso à plataforma.</p></div></div>
+              <div class="approval-list" data-approval-list></div>
+            </section>
+
+            <section class="admin-view" data-view="teachers" hidden>
+              <div class="section-intro"><div><h2>Professores cadastrados</h2><p>Cadastre, edite ou remova professores da plataforma.</p></div><button class="admin-primary" type="button" data-add-teacher>+ Cadastrar professor</button></div>
+              <div class="admin-table-wrap">
+                <table class="admin-table"><thead><tr><th>Professor</th><th>Escola</th><th>Turmas</th><th>Status</th><th>Ações</th></tr></thead><tbody data-teacher-list></tbody></table>
+              </div>
+            </section>
+
+            <section class="admin-view" data-view="classes" hidden>
+              <div class="section-intro"><div><h2>Todas as turmas</h2><p>Visão geral das turmas ativas na Órbita.</p></div><span class="count-chip">4 turmas ativas</span></div>
+              <div class="class-grid">
+                <article><span>3º A</span><h3>Exploradores da Matemática</h3><p>Prof.ª Ana Martins</p><footer><b>28 estudantes</b><small>82% de progresso</small></footer></article>
+                <article><span>2º B</span><h3>Pequenos Astronautas</h3><p>Prof. Carlos Lima</p><footer><b>24 estudantes</b><small>76% de progresso</small></footer></article>
+                <article><span>4º A</span><h3>Missão dos Números</h3><p>Prof.ª Juliana Alves</p><footer><b>31 estudantes</b><small>89% de progresso</small></footer></article>
+                <article><span>1º C</span><h3>Turma das Estrelas</h3><p>Prof. Rafael Souza</p><footer><b>22 estudantes</b><small>68% de progresso</small></footer></article>
+              </div>
+            </section>
+
+            <section class="admin-view" data-view="tracks" hidden>
+              <div class="section-intro"><div><h2>Trilhas de aprendizagem</h2><p>Acompanhe os conteúdos disponíveis por etapa.</p></div><span class="count-chip">6 trilhas publicadas</span></div>
+              <div class="track-grid">
+                <article><i>01</i><div><span>Números e quantidades</span><h3>Começando pelas estrelas</h3><p>12 missões • 120 atividades</p></div><b>Ativa</b></article>
+                <article><i>02</i><div><span>Adição e subtração</span><h3>Somando descobertas</h3><p>10 missões • 96 atividades</p></div><b>Ativa</b></article>
+                <article><i>03</i><div><span>Geometria</span><h3>Formas pelo universo</h3><p>8 missões • 72 atividades</p></div><b>Ativa</b></article>
+                <article><i>04</i><div><span>Grandezas e medidas</span><h3>Medindo distâncias</h3><p>9 missões • 84 atividades</p></div><b>Ativa</b></article>
+                <article><i>05</i><div><span>Sistema monetário</span><h3>Missão Real</h3><p>3 níveis • 30 atividades</p></div><b>Ativa</b></article>
+                <article><i>06</i><div><span>Multiplicação</span><h3>Planetas multiplicadores</h3><p>10 missões • 90 atividades</p></div><b>Ativa</b></article>
+              </div>
+            </section>
+
+            <section class="admin-view" data-view="reports" hidden>
+              <div class="section-intro"><div><h2>Relatórios de uso</h2><p>Indicadores gerais de participação e aprendizagem.</p></div><button class="admin-secondary" type="button" data-export-report>↓ Exportar resumo</button></div>
+              <div class="metric-grid">
+                <article><span>Estudantes ativos</span><strong>105</strong><small>↑ 12% neste mês</small></article>
+                <article><span>Professores</span><strong data-teacher-metric>4</strong><small>Contas autorizadas</small></article>
+                <article><span>Atividades concluídas</span><strong>2.847</strong><small>↑ 18% neste mês</small></article>
+                <article><span>Taxa média de acerto</span><strong>81%</strong><small>Meta: 80%</small></article>
+              </div>
+              <div class="report-panel"><div><h3>Uso da plataforma</h3><p>Atividades concluídas nos últimos seis meses</p></div><div class="bar-chart" aria-label="Gráfico de atividades por mês"><i style="--bar:42%"><span>Fev</span></i><i style="--bar:55%"><span>Mar</span></i><i style="--bar:63%"><span>Abr</span></i><i style="--bar:72%"><span>Mai</span></i><i style="--bar:84%"><span>Jun</span></i><i style="--bar:96%"><span>Jul</span></i></div></div>
+            </section>
+          </div>
+        </div>
+
+        <div class="admin-modal" data-teacher-modal hidden>
+          <div class="admin-modal__card" role="dialog" aria-modal="true" aria-labelledby="teacher-modal-title">
+            <button class="admin-modal__close" type="button" data-close-modal aria-label="Fechar">×</button>
+            <p>GESTÃO DE PROFESSORES</p><h2 id="teacher-modal-title" data-modal-title>Cadastrar professor</h2>
+            <form id="teacher-form">
+              <input type="hidden" name="id" />
+              <label>Nome completo<input name="name" required placeholder="Nome do professor" /></label>
+              <label>E-mail<input name="email" type="email" required placeholder="professor@escola.com" /></label>
+              <label>Escola<input name="school" required placeholder="Nome da escola" /></label>
+              <label data-admin-teacher-password>Senha temporária<input name="password" type="password" minlength="8" placeholder="Mínimo de 8 caracteres" /></label>
+              <button class="admin-primary" type="submit">Salvar professor</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="screen admin-screen teacher-screen" data-screen="teacher" aria-labelledby="teacher-page-title" hidden>
+        <aside class="admin-sidebar teacher-sidebar">
+          <img class="admin-sidebar__logo" src="assets/imagens/logos/logo-horizontal-sf.png" alt="Órbita" />
+          <div class="admin-profile">
+            <span class="admin-profile__avatar"><img src="assets/imagens/design/professor.png" alt="" /></span>
+            <span><strong data-teacher-profile-name>Professor</strong><small>Professor(a)</small></span>
+          </div>
+          <nav class="admin-nav" aria-label="Painel do professor">
+            <button class="is-active" type="button" data-teacher-view="overview"><span><img src="assets/imagens/design/icone-visao-geral_files/icone-visao-geral.png" alt="" /></span> Visão geral</button>
+            <button type="button" data-teacher-view="classes"><span><img src="assets/imagens/design/icone-minhas-turmas_files/icone-minhas-turmas.png" alt="" /></span> Minhas turmas</button>
+            <button type="button" data-teacher-view="students"><span><img src="assets/imagens/design/icone-estudante_files/icone-estudante.png" alt="" /></span> Estudantes</button>
+            <button type="button" data-teacher-view="progress"><span><img src="assets/imagens/design/icone-progresso_files/icone-progresso.png" alt="" /></span> Progresso</button>
+            <button type="button" data-teacher-view="errors"><span><img src="assets/imagens/design/icone-erros-frequentes_files/icone-erros-frequentes.png" alt="" /></span> Erros frequentes</button>
+            <button type="button" data-teacher-view="reports"><span><img src="assets/imagens/design/icone-relatorios_files/icone-relatorios.png" alt="" /></span> Relatórios</button>
+          </nav>
+          <button class="admin-logout" type="button" data-teacher-logout><span><img src="assets/imagens/design/icone-sair_files/icone-sair.png" alt="" /></span> Sair da conta</button>
+        </aside>
+
+        <div class="admin-main">
+          <header class="admin-header">
+            <button class="admin-menu" type="button" aria-label="Abrir menu" data-teacher-menu>☰</button>
+            <div><p>PAINEL DO PROFESSOR</p><h1 id="teacher-page-title" data-teacher-title>Visão geral</h1></div>
+            <span class="admin-header__date" data-teacher-date></span>
+          </header>
+          <div class="admin-content">
+            <section class="teacher-view is-active" data-teacher-section="overview">
+              <div class="teacher-welcome"><div><span>BEM-VINDO(A) DE VOLTA</span><h2 data-teacher-welcome>Olá, professor(a)!</h2><p>Acompanhe as jornadas de aprendizagem das suas turmas.</p></div><img src="assets/imagens/logos/mascote.png" alt="Mascote da Órbita" /></div>
+              <div class="metric-grid teacher-metrics">
+                <article><span>Turmas ativas</span><strong data-class-count>0</strong><small>Organizadas por ano escolar</small></article>
+                <article><span>Estudantes</span><strong data-student-count>0</strong><small>Cadastros ativos</small></article>
+                <article><span>Progresso médio</span><strong data-average-progress>0%</strong><small>Em todas as trilhas</small></article>
+                <article><span>Precisam de atenção</span><strong data-attention-count>0</strong><small>Progresso abaixo de 50%</small></article>
+              </div>
+              <div class="teacher-overview-grid"><div class="teacher-panel"><div class="panel-heading"><div><h3>Progresso das turmas</h3><p>Média por turma cadastrada</p></div></div><div data-class-progress></div></div><div class="teacher-panel"><div class="panel-heading"><div><h3>Atividade recente</h3><p>Últimos acessos dos estudantes</p></div></div><div class="recent-list" data-recent-students></div></div></div>
+            </section>
+
+            <section class="teacher-view" data-teacher-section="classes" hidden>
+              <div class="section-intro"><div><h2>Minhas turmas</h2><p>Cadastre turmas e compartilhe o código de acesso com os estudantes.</p></div><button class="admin-primary" type="button" data-add-class>+ Cadastrar turma</button></div>
+              <div class="teacher-class-grid" data-teacher-class-list></div>
+            </section>
+
+            <section class="teacher-view" data-teacher-section="students" hidden>
+              <div class="section-intro"><div><h2>Estudantes</h2><p>Cadastre estudantes e escolha a trilha de cada um.</p></div><button class="admin-primary" type="button" data-add-student>+ Cadastrar estudante</button></div>
+              <div class="admin-table-wrap"><table class="admin-table teacher-student-table"><thead><tr><th>Estudante / login</th><th>Turma</th><th>Trilha</th><th>Acesso</th><th>Ações</th></tr></thead><tbody data-student-list></tbody></table></div>
+            </section>
+
+            <section class="teacher-view" data-teacher-section="progress" hidden>
+              <div class="section-intro"><div><h2>Progresso dos estudantes</h2><p>Acompanhe o avanço individual em cada trilha.</p></div><span class="count-chip" data-progress-total></span></div>
+              <div class="progress-list" data-progress-list></div>
+            </section>
+
+            <section class="teacher-view" data-teacher-section="errors" hidden>
+              <div class="section-intro"><div><h2>Erros mais frequentes</h2><p>Identifique os conteúdos que precisam ser retomados.</p></div></div>
+              <div class="error-layout"><div class="teacher-panel"><div class="panel-heading"><div><h3>Dificuldades da turma</h3><p>Quantidade de erros registrados por conteúdo</p></div></div><div class="horizontal-chart" data-error-chart></div></div><div class="teacher-panel attention-panel"><h3>Recomendações pedagógicas</h3><div data-error-recommendations></div></div></div>
+            </section>
+
+            <section class="teacher-view" data-teacher-section="reports" hidden>
+              <div class="section-intro"><div><h2>Relatórios</h2><p>Consulte resultados coletivos ou o desempenho de um estudante.</p></div><button class="admin-secondary" type="button" data-export-teacher-report>↓ Exportar relatório</button></div>
+              <div class="report-filters"><label>Tipo de relatório<select data-report-type><option value="collective">Coletivo</option><option value="individual">Individual</option></select></label><label data-report-student-wrap hidden>Estudante<select data-report-student></select></label></div>
+              <div class="teacher-report" data-teacher-report></div>
+            </section>
+          </div>
+        </div>
+
+        <div class="admin-modal" data-class-modal hidden><div class="admin-modal__card" role="dialog" aria-modal="true" aria-labelledby="class-modal-title"><button class="admin-modal__close" type="button" data-close-class-modal aria-label="Fechar">×</button><p>GESTÃO DE TURMAS</p><h2 id="class-modal-title">Cadastrar turma</h2><form id="class-form"><label>Nome da turma<input name="name" required placeholder="Ex.: Exploradores da Matemática" /></label><label>Ano escolar<select name="grade" required><option value="1">1º ano do Ensino Fundamental</option><option value="2">2º ano do Ensino Fundamental</option><option value="3">3º ano do Ensino Fundamental</option><option value="4">4º ano do Ensino Fundamental</option><option value="5">5º ano do Ensino Fundamental</option></select></label><label>Código da turma<input name="code" required maxlength="12" data-class-code /></label><button class="admin-primary" type="submit">Criar turma</button></form></div></div>
+
+        <div class="admin-modal" data-student-modal hidden><div class="admin-modal__card" role="dialog" aria-modal="true" aria-labelledby="student-modal-title"><button class="admin-modal__close" type="button" data-close-student-modal aria-label="Fechar">×</button><p>GESTÃO DE ESTUDANTES</p><h2 id="student-modal-title">Cadastrar estudante</h2><form id="student-form"><label>Nome completo <small>Este será o login do estudante</small><input name="name" required placeholder="Nome completo do estudante" /></label><label>Turma<select name="classId" required data-student-class></select></label><label>Trilha de aprendizagem<select name="track" required><option value="1">1º ano do Ensino Fundamental</option><option value="2">2º ano do Ensino Fundamental</option><option value="3">3º ano do Ensino Fundamental</option><option value="4">4º ano do Ensino Fundamental</option><option value="5">5º ano do Ensino Fundamental</option></select></label><div class="access-note">O estudante entrará usando o nome completo e o código da turma escolhida.</div><button class="admin-primary" type="submit">Cadastrar estudante</button></form></div></div>
+      </section>
+
+      <section class="screen student-screen" data-screen="student" aria-labelledby="student-page-title" hidden>
+        <aside class="student-sidebar">
+          <img class="student-sidebar__logo" src="assets/imagens/logos/logo-horizontal-sf.png" alt="Órbita" />
+          <div class="student-mini-profile">
+            <span class="student-avatar-mini" data-avatar aria-hidden="true"></span>
+            <div><strong data-student-profile-name>Estudante</strong><small data-student-profile-track>Trilha do 1º ano</small></div>
+          </div>
+          <nav class="student-nav" aria-label="Painel do estudante">
+            <button class="is-active" type="button" data-student-view="home"><span><img src="assets/imagens/design/icone-visao-geral_files/icone-visao-geral.png" alt="" /></span> Início</button>
+            <button type="button" data-student-view="path"><span><img src="assets/imagens/design/icone-trilha_files/icone-trilha.png" alt="" /></span> Minha trilha</button>
+            <button type="button" data-student-view="explore"><span aria-hidden="true">◎</span> Explorar</button>
+            <button type="button" data-student-view="logbook"><span><img src="assets/imagens/design/icone-diario-de-bordo_files/icone-diario-de-bordo.png" alt="" /></span> Diário de bordo</button>
+            <button type="button" data-student-view="avatar"><span><img src="assets/imagens/design/icone-avatar_files/icone-meu-avatar.png" alt="" /></span> Meu avatar</button>
+            <button type="button" data-student-view="progress"><span><img src="assets/imagens/design/icone-progresso_files/icone-progresso.png" alt="" /></span> Meu progresso</button>
+          </nav>
+          <button class="student-logout" type="button" data-student-logout><span><img src="assets/imagens/design/icone-sair_files/icone-sair.png" alt="" /></span> Sair</button>
+        </aside>
+
+        <div class="student-main">
+          <header class="student-header">
+            <button class="student-menu" type="button" data-student-menu aria-label="Abrir menu">☰</button>
+            <div><p>MINHA JORNADA</p><h1 id="student-page-title" data-student-title>Início</h1></div>
+            <div class="student-wallet"><span><img src="assets/imagens/design/moeda.png" alt="Moedas" /><b data-student-coins>0</b></span><span><img src="assets/imagens/design/estrela.png" alt="Estrelas" /><b data-student-stars>0</b></span><button class="fullscreen-button" type="button" data-fullscreen aria-label="Ativar tela cheia"><b aria-hidden="true">⛶</b><i data-fullscreen-label>Tela cheia</i></button><button class="sound-button sound-button--student" type="button" aria-label="Desativar sons" aria-pressed="true"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 9v6h4l5 4V5L9 9H5Zm13.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4Z"/></svg></button></div>
+          </header>
+
+          <div class="student-content">
+            <section class="student-view is-active" data-student-section="home">
+              <div class="student-welcome-card">
+                <div><span>PRONTO PARA EXPLORAR?</span><h2 data-student-welcome>Olá, estudante!</h2><p data-student-welcome-copy>Sua próxima missão matemática está esperando por você.</p><button type="button" data-start-challenge>Continuar minha aventura →</button></div>
+                <div class="student-mascot student-avatar-welcome" data-avatar role="img" aria-label="Avatar do estudante"></div>
+                <i class="welcome-planet">✦</i>
+              </div>
+              <div class="student-stat-grid"><article><span>Progresso da trilha</span><strong data-student-progress-home>0%</strong><i><b data-student-progress-bar></b></i></article><article><span>Missões concluídas</span><strong data-student-missions>0</strong><small data-student-mission-total>de 6 missões</small></article><article><span>Desafios corretos</span><strong data-student-correct>0</strong><small>Continue praticando!</small></article></div>
+              <div class="student-home-grid"><div class="student-panel next-mission"><div class="student-panel__heading"><div><h3>Próxima missão</h3><p data-next-mission-track>Trilha do 1º ano</p></div><span>01</span></div><h4 data-next-mission-title>Números e quantidades</h4><p>Resolva um desafio e avance pela sua trilha.</p><button type="button" data-start-challenge>Começar desafio</button></div><div class="student-panel"><div class="student-panel__heading"><div><h3>Meu diário de bordo</h3><p>Descobertas espaciais</p></div><span>✦</span></div><div class="mini-collection" data-mini-collection></div><button class="text-button" type="button" data-open-logbook>Ver diário completo →</button></div></div>
+              <div class="student-bonus-list">
+                <div class="bonus-unlock-card" data-luck-round-card hidden>
+                  <div class="bonus-unlock-card__icon" aria-hidden="true">✦</div>
+                  <div><span>SORTE OU REVÉS</span><h3>Sua rodada está esperando!</h3><p data-luck-round-card-copy></p></div>
+                  <button type="button" data-resume-luck-round>Jogar Sorte ou Revés →</button>
+                </div>
+                <div class="bonus-unlock-card" data-memory-bonus-card hidden>
+                  <div class="bonus-unlock-card__icon" aria-hidden="true">★</div>
+                  <div><span>SORTE OU REVÉS</span><h3>Jogo da memória espacial</h3><p data-memory-bonus-card-copy>Encontre os 3 pares antes de esgotar suas chances e conquiste estrelas.</p></div>
+                  <button type="button" data-open-memory-bonus>Jogar Sorte ou Revés →</button>
+                </div>
+                <div class="bonus-unlock-card bonus-unlock-card--roulette" data-planet-roulette-card hidden>
+                  <div class="bonus-unlock-card__icon" aria-hidden="true">↻</div>
+                  <div><span>SORTE OU REVÉS 2</span><h3>Roleta dos planetas</h3><p data-planet-roulette-card-copy>Gire uma vez e descubra quantas estrelas o planeta sorteado vale.</p></div>
+                  <button type="button" data-open-planet-roulette>Girar a roleta →</button>
+                </div>
+                <div class="bonus-unlock-card bonus-unlock-card--constellation" data-constellation-bonus-card hidden>
+                  <div class="bonus-unlock-card__icon" aria-hidden="true">✦</div>
+                  <div><span>SORTE OU REVÉS 3</span><h3>Constelação de maior valor</h3><p data-constellation-bonus-card-copy>Memorize as cartas e escolha a constelação de maior valor.</p></div>
+                  <button type="button" data-open-constellation-bonus>Começar atividade →</button>
+                </div>
+                <div class="bonus-unlock-card bonus-unlock-card--meteor" data-meteor-bonus-card hidden>
+                  <div class="bonus-unlock-card__icon" aria-hidden="true">☄</div>
+                  <div><span>SORTE OU REVÉS 4</span><h3>Encontre o meteoro</h3><p data-meteor-bonus-card-copy>Acompanhe o copo que esconde o meteoro e tente encontrá-lo.</p></div>
+                  <button type="button" data-open-meteor-bonus>Começar atividade →</button>
+                </div>
+                <div class="bonus-unlock-card bonus-unlock-card--puzzle" data-solar-puzzle-card hidden>
+                  <div class="bonus-unlock-card__icon" aria-hidden="true">▦</div>
+                  <div><span>SORTE OU REVÉS 5</span><h3>Quebra-cabeça do Sistema Solar</h3><p data-solar-puzzle-card-copy>Arraste as seis peças e reconstrua a imagem do Sistema Solar.</p></div>
+                  <button type="button" data-open-solar-puzzle>Começar atividade →</button>
+                </div>
+                <div class="bonus-unlock-card bonus-unlock-card--rocky-memory" data-rocky-memory-bonus-card hidden>
+                  <div class="bonus-unlock-card__icon" aria-hidden="true">★</div>
+                  <div><span>SORTE OU REVÉS 6</span><h3>Memória dos planetas rochosos</h3><p data-rocky-memory-bonus-card-copy>Encontre os 4 pares antes de esgotar suas chances e conquiste estrelas.</p></div>
+                  <button type="button" data-open-rocky-memory-bonus>Jogar Sorte ou Revés →</button>
+                </div>
+              </div>
+            </section>
+
+            <section class="student-view" data-student-section="path" hidden>
+              <div class="student-section-intro"><div><span data-path-kicker>TRILHA DO 1º ANO</span><h2>Minha trilha de aprendizagem</h2><p>Complete as missões para desbloquear novas descobertas.</p></div><div class="path-progress"><b data-path-progress>0%</b><span>concluído</span></div></div>
+              <div class="mission-path" data-mission-path></div>
+            </section>
+
+            <section class="student-view" data-student-section="explore" aria-labelledby="explore-title" hidden>
+              <div class="student-section-intro explore-intro">
+                <div><span>UMA NOVA DESCOBERTA A CADA ÓRBITA</span><h2 id="explore-title">Sistema Aura Rubre</h2></div>
+                <button class="explore-motion" type="button" data-explore-motion aria-pressed="false"><span aria-hidden="true" data-explore-motion-icon>Ⅱ</span><span data-explore-motion-label>Pausar órbitas</span></button>
+              </div>
+              <div class="explore-system">
+                <div class="explore-system__heading"><span class="explore-system__instruction" id="explore-instructions"><span aria-hidden="true">✦</span><span>Toque na estrela ou em um planeta para vê-lo de perto</span></span><span>9 planetas · 1 estrela</span></div>
+                <div class="explore-scene" data-explore-scene role="group" aria-label="Carrossel orbital do sistema Aura Rubre" aria-describedby="explore-instructions">
+                  <div class="explore-orbits" data-explore-orbits aria-hidden="true"></div>
+                  <div class="explore-bodies" data-explore-bodies></div>
+                </div>
+              </div>
+              <nav class="explore-destinations" data-explore-destinations aria-label="Destinos do sistema Aura Rubre"></nav>
+              <dialog class="explore-dialog" data-explore-dialog aria-labelledby="explore-detail-title" aria-describedby="explore-detail-copy">
+                <button class="explore-dialog__close" type="button" data-explore-close aria-label="Fechar descoberta">×</button>
+                <div class="explore-dialog__art" data-explore-detail-art aria-hidden="true"></div>
+                <div class="explore-dialog__copy"><span data-explore-detail-kicker></span><h2 id="explore-detail-title" data-explore-detail-title></h2><p id="explore-detail-copy" data-explore-detail-copy></p><button type="button" data-explore-close>Continuar explorando <span aria-hidden="true">→</span></button></div>
+                <div class="world-infographic" data-world-infographic hidden>
+                  <header class="world-map-heading"><div><span data-world-map-kicker></span><h2 id="world-map-title" data-world-map-title>Aerívia</h2><p id="world-map-instructions">Toque em uma figurinha para desbloqueá-la e descobrir sua história.</p></div><div class="world-map-wallet"><span><img src="assets/imagens/design/moeda.png" alt="" /><b data-world-map-coins>0</b><small>moedas</small></span><p data-world-map-progress></p></div></header>
+                  <div class="world-entry" data-world-entry hidden><img data-world-entry-image alt="" /><div><h3 data-world-entry-title>Um novo mundo para descobrir</h3><p data-world-entry-copy>Desbloqueie este planeta uma única vez com estrelas. Depois, colecione suas 12 figurinhas com moedas.</p><p class="world-entry__balance" data-world-entry-balance></p><button type="button" data-world-entry-unlock></button><p data-world-entry-message role="status"></p></div></div>
+                  <div class="world-map-grid" data-world-map-grid aria-label="Figurinhas do planeta"></div>
+                  <footer class="world-map-footer"><span data-world-map-footer-note>Suas descobertas ficam guardadas no diário de bordo.</span><button type="button" data-explore-close>Voltar ao sistema <span aria-hidden="true">→</span></button></footer>
+                </div>
+              </dialog>
+            </section>
+
+            <section class="student-view" data-student-section="challenge" hidden>
+              <div class="challenge-shell">
+                <div class="challenge-top"><div><span data-challenge-label>DESAFIO DA TRILHA</span><h2 data-challenge-track>1º ano do Ensino Fundamental</h2></div><button type="button" class="challenge-back" data-ui-student-view="path">← Minha trilha</button></div>
+                <div class="mission-intro-screen" data-mission-intro>
+                  <div class="mission-tabs" data-mission-tabs hidden></div>
+                  <div class="mission-brief" data-mission-brief hidden><span>COMO JOGAR</span><h3></h3><p></p><div class="mission-example" data-mission-example hidden></div></div>
+                  <div class="lesson-video" data-lesson-video hidden><video controls preload="metadata" data-lesson-video-player></video><div><span>VIDEOAULA DA MISSÃO</span><h3 data-lesson-video-title></h3><p>Assista à explicação antes de começar ou sempre que precisar revisar.</p></div></div>
+                  <button class="begin-questions-button" type="button" data-begin-questions>Responder às questões →</button>
+                </div>
+                <div class="question-screen" data-question-screen hidden>
+                  <div class="challenge-card"><div class="challenge-question-heading"><p class="challenge-counter" data-challenge-counter>QUESTÃO 1</p><button type="button" data-speak-question aria-label="Ouvir enunciado">🔊 Ouvir enunciado</button></div><h3 data-challenge-question>Quanto é 5 + 3?</h3><div class="question-media" data-question-media hidden></div><div class="challenge-options" data-challenge-options></div><button class="challenge-check" type="button" data-check-challenge hidden>Conferir resposta</button><div class="challenge-actions"><div class="challenge-feedback" data-challenge-feedback hidden><span data-feedback-icon>✓</span><div><p data-feedback-copy>Você encontrou a resposta correta.</p><button type="button" data-speak-feedback>🔊 Ouvir feedback</button><button type="button" data-retry-challenge hidden>Tente novamente</button></div></div><button class="challenge-next" type="button" data-next-challenge hidden>Próxima questão →</button></div></div>
+                </div>
+              </div>
+            </section>
+
+            <section class="student-view" data-student-section="result" hidden>
+              <div class="journey-result-card">
+                <div class="journey-result-card__badge" aria-hidden="true">★</div>
+                <span data-journey-result-kicker>MISSÃO CONCLUÍDA</span>
+                <h2 data-journey-result-title>Parabéns! Missão cumprida!</h2>
+                <p data-journey-result-copy>Suas recompensas foram adicionadas à sua carteira.</p>
+                <div class="journey-result-rewards">
+                  <article data-journey-result-coins>
+                    <img src="assets/imagens/design/moeda.png" alt="" />
+                    <div><small>MOEDAS CONQUISTADAS</small><strong data-journey-result-coins-value>+0</strong></div>
+                  </article>
+                  <article data-journey-result-stars>
+                    <img src="assets/imagens/design/estrela.png" alt="" />
+                    <div><small>ESTRELAS CONQUISTADAS</small><strong data-journey-result-stars-value>+0</strong></div>
+                  </article>
+                </div>
+                <div class="journey-result-invitation">
+                  <span data-journey-invitation-kicker>SORTE OU REVÉS LIBERADA</span>
+                  <h3 data-journey-invitation-title>Que tal conquistar mais estrelas?</h3>
+                  <p data-journey-invitation-copy>Jogue a Sorte ou Revés antes de seguir para a próxima missão.</p>
+                </div>
+                <div class="journey-result-actions">
+                  <button class="journey-result-primary" type="button" data-start-result-bonus>Jogar Sorte ou Revés →</button>
+                  <button class="journey-result-secondary" type="button" data-result-next-mission>Começar próxima missão</button>
+                  <button class="journey-result-primary" type="button" data-result-path hidden>Continuar na trilha</button>
+                  <button class="journey-result-secondary" type="button" data-result-explore hidden>Explorar novos mundos</button>
+                </div>
+              </div>
+            </section>
+
+            <section class="student-view" data-student-section="bonus" hidden>
+              <div class="memory-bonus-shell">
+                <header class="memory-bonus-heading">
+                  <div><span>SORTE OU REVÉS</span><h2>Jogo da memória espacial</h2><p>Encontre os três pares antes de errar três combinações de cartas.</p></div>
+                  <button type="button" data-close-memory-bonus>Voltar ao início</button>
+                </header>
+                <div class="memory-bonus-info">
+                  <div><span>TENTATIVA</span><strong data-memory-attempt>1 de 3</strong><small><b data-memory-pairs>0</b> de 3 pares encontrados</small></div>
+                  <ol aria-label="Tabela de estrelas de Sorte ou Revés">
+                    <li data-memory-score="1"><b>1ª</b><span>+6 ★</span></li>
+                    <li data-memory-score="2"><b>2ª</b><span>+3 ★</span></li>
+                    <li data-memory-score="3"><b>3ª</b><span>+1 ★</span></li>
+                    <li data-memory-score="0"><b>Não concluiu</b><span>−3 ★</span></li>
+                  </ol>
+                </div>
+                <div class="memory-board" data-memory-board aria-label="Cartas do jogo da memória"></div>
+                <div class="memory-result" data-memory-result hidden>
+                  <span data-memory-result-icon>★</span>
+                  <div><strong data-memory-result-title>Parabéns!</strong><p data-memory-result-copy></p></div>
+                  <div class="memory-result__actions"><button type="button" data-restart-memory-bonus>Jogar novamente</button><button type="button" data-close-memory-bonus>Continuar jornada →</button></div>
+                </div>
+              </div>
+            </section>
+
+            <section class="student-view" data-student-section="roulette" hidden>
+              <div class="planet-roulette-shell">
+                <header class="memory-bonus-heading">
+                  <div><span>SORTE OU REVÉS 2</span><h2>Roleta dos planetas</h2><p>Você tem um giro. O planeta indicado pela seta define sua pontuação.</p></div>
+                  <button type="button" data-close-planet-roulette>Voltar ao início</button>
+                </header>
+                <div class="planet-roulette-layout">
+                  <div class="planet-wheel-stage">
+                    <div class="planet-wheel-pointer" aria-hidden="true">▼</div>
+                    <div class="planet-wheel" data-planet-wheel>
+                      <span style="--planet-angle:0deg;--planet-counter:0deg"><img src="assets/imagens/figurinhas/netuno.png" alt="" /><b>Netuno</b></span>
+                      <span style="--planet-angle:60deg;--planet-counter:-60deg"><img src="assets/imagens/figurinhas/urano.png" alt="" /><b>Urano</b></span>
+                      <span style="--planet-angle:120deg;--planet-counter:-120deg"><img src="assets/imagens/figurinhas/saturno.png" alt="" /><b>Saturno</b></span>
+                      <span style="--planet-angle:180deg;--planet-counter:-180deg"><img src="assets/imagens/figurinhas/jupiter.png" alt="" /><b>Júpiter</b></span>
+                      <span style="--planet-angle:240deg;--planet-counter:-240deg"><img src="assets/imagens/figurinhas/marte.png" alt="" /><b>Marte</b></span>
+                      <span style="--planet-angle:300deg;--planet-counter:-300deg"><img src="assets/imagens/figurinhas/terra.png" alt="" /><b>Terra</b></span>
+                      <i aria-hidden="true">★</i>
+                    </div>
+                  </div>
+                  <aside class="planet-score-table">
+                    <span>PONTUAÇÃO DA ROLETA</span>
+                    <ul>
+                      <li><img src="assets/imagens/figurinhas/netuno.png" alt="" /><b>Netuno</b><strong>−3 ★</strong></li>
+                      <li><img src="assets/imagens/figurinhas/urano.png" alt="" /><b>Urano</b><strong>−1 ★</strong></li>
+                      <li><img src="assets/imagens/figurinhas/saturno.png" alt="" /><b>Saturno</b><strong>+2 ★</strong></li>
+                      <li><img src="assets/imagens/figurinhas/jupiter.png" alt="" /><b>Júpiter</b><strong>+3 ★</strong></li>
+                      <li><img src="assets/imagens/figurinhas/marte.png" alt="" /><b>Marte</b><strong>+4 ★</strong></li>
+                      <li><img src="assets/imagens/figurinhas/terra.png" alt="" /><b>Terra</b><strong>+5 ★</strong></li>
+                    </ul>
+                    <button type="button" data-spin-planet-roulette>Girar roleta</button>
+                    <small data-planet-roulette-note>Este giro vale estrelas e só pode ser realizado uma vez.</small>
+                  </aside>
+                </div>
+                <div class="roulette-result" data-planet-roulette-result hidden>
+                  <img data-planet-result-image src="assets/imagens/figurinhas/terra.png" alt="" />
+                  <div><span>PLANETA SORTEADO</span><strong data-planet-result-title>Terra!</strong><p data-planet-result-copy></p></div>
+                  <button type="button" data-close-planet-roulette>Continuar jornada →</button>
+                </div>
+              </div>
+            </section>
+
+            <section class="student-view" data-student-section="constellation" hidden>
+              <div class="constellation-bonus-shell">
+                <header class="memory-bonus-heading">
+                  <div><span>SORTE OU REVÉS 3</span><h2>Escolha a Constelação de maior valor</h2><p>Observe as cartas, acompanhe o embaralhamento e faça uma única escolha.</p></div>
+                  <button type="button" data-close-constellation-bonus>Voltar ao início</button>
+                </header>
+                <div class="constellation-status" aria-live="polite">
+                  <div><span>ETAPA</span><strong data-constellation-status>Prepare-se!</strong></div>
+                  <div class="constellation-countdown"><span data-constellation-countdown>3</span><small>segundos</small></div>
+                </div>
+                <div class="constellation-board" data-constellation-board aria-label="Cartas de estrelas e constelações"></div>
+                <aside class="constellation-score-guide">
+                  <span>PONTUAÇÃO POSSÍVEL</span>
+                  <ul>
+                    <li><b>Leão</b><strong>−2 ★</strong></li>
+                    <li><b>Cruzeiro do Sul</b><strong>−1 ★</strong></li>
+                    <li><b>Cavalo Pequeno</b><strong>+2 ★</strong></li>
+                    <li><b>Três Marias</b><strong>+3 ★</strong></li>
+                    <li><b>Alpha Centauri</b><strong>+4 ★</strong></li>
+                    <li><b>Sírius</b><strong>+5 ★</strong></li>
+                  </ul>
+                </aside>
+              </div>
+            </section>
+
+            <section class="student-view" data-student-section="meteor" hidden>
+              <div class="meteor-bonus-shell">
+                <header class="memory-bonus-heading">
+                  <div><span>SORTE OU REVÉS 4</span><h2>Encontre o meteoro</h2><p>Veja onde está o meteoro, acompanhe o copo durante os movimentos e faça sua escolha.</p></div>
+                  <button type="button" data-close-meteor-bonus>Voltar ao início</button>
+                </header>
+                <div class="meteor-game-info">
+                  <div><span>ETAPA</span><strong data-meteor-status>Prepare-se para acompanhar os copos!</strong></div>
+                  <div><span>TENTATIVA</span><strong data-meteor-attempt>1 de 2</strong></div>
+                </div>
+                <div class="meteor-board" data-meteor-board aria-label="Três copos do jogo Encontre o meteoro"></div>
+                <div class="meteor-feedback" data-meteor-feedback role="status" aria-live="polite" hidden>
+                  <span aria-hidden="true">☄</span>
+                  <div><strong>Tente mais uma vez!</strong><p>Observe os copos restantes.</p></div>
+                </div>
+                <aside class="meteor-score-guide">
+                  <span>PONTUAÇÃO POSSÍVEL</span>
+                  <ul>
+                    <li data-meteor-score="1"><b>1ª tentativa</b><strong>+6 ★</strong></li>
+                    <li data-meteor-score="2"><b>2ª tentativa</b><strong>+2 ★</strong></li>
+                    <li data-meteor-score="0"><b>Não encontrou</b><strong>−3 ★</strong></li>
+                  </ul>
+                </aside>
+              </div>
+            </section>
+
+            <section class="student-view" data-student-section="puzzle" hidden>
+              <div class="solar-puzzle-shell">
+                <header class="memory-bonus-heading">
+                  <div><span>SORTE OU REVÉS 5</span><h2>Quebra-cabeça do Sistema Solar</h2><p>Arraste cada peça para o espaço correto. No celular, você também pode tocar na peça e depois no espaço.</p></div>
+                  <button type="button" data-close-solar-puzzle>Voltar ao início</button>
+                </header>
+                <div class="solar-puzzle-info">
+                  <div><span>TENTATIVA</span><strong data-solar-puzzle-attempt>1 de 2</strong></div>
+                  <div><span>MONTAGEM</span><strong data-solar-puzzle-progress>0 de 6 peças</strong></div>
+                </div>
+                <div class="solar-puzzle-layout">
+                  <div class="solar-puzzle-workspace">
+                    <div class="solar-puzzle-board" data-solar-puzzle-board aria-label="Tabuleiro do quebra-cabeça"></div>
+                    <button class="solar-puzzle-check" type="button" data-check-solar-puzzle disabled>Conferir montagem</button>
+                  </div>
+                  <aside class="solar-puzzle-sidebar">
+                    <div>
+                      <span>PEÇAS PARA MONTAR</span>
+                      <div class="solar-puzzle-tray" data-solar-puzzle-tray></div>
+                    </div>
+                  </aside>
+                </div>
+                <div class="solar-puzzle-feedback" data-solar-puzzle-feedback role="status" aria-live="polite" hidden>
+                  <span aria-hidden="true">▦</span>
+                  <div><strong>A imagem ainda não está completa.</strong><p>Organize novamente as peças.</p></div>
+                </div>
+                <aside class="solar-puzzle-score-guide">
+                  <span>PONTUAÇÃO POSSÍVEL</span>
+                  <ul>
+                    <li data-solar-puzzle-score="1"><b>1ª tentativa</b><strong>+6 ★</strong></li>
+                    <li data-solar-puzzle-score="2"><b>2ª tentativa</b><strong>+2 ★</strong></li>
+                    <li data-solar-puzzle-score="0"><b>Não conseguiu</b><strong>−3 ★</strong></li>
+                  </ul>
+                </aside>
+              </div>
+            </section>
+
+            <section class="student-view" data-student-section="rocky-memory" hidden>
+              <div class="memory-bonus-shell">
+                <header class="memory-bonus-heading">
+                  <div><span>SORTE OU REVÉS 6</span><h2>Memória dos planetas rochosos</h2><p>Encontre os quatro pares antes de errar três combinações de cartas.</p></div>
+                  <button type="button" data-close-rocky-memory-bonus>Voltar ao início</button>
+                </header>
+                <div class="memory-bonus-info">
+                  <div><span>TENTATIVA</span><strong data-rocky-memory-attempt>1 de 3</strong><small><b data-rocky-memory-pairs>0</b> de 4 pares encontrados</small></div>
+                  <ol aria-label="Tabela de estrelas de Sorte ou Revés">
+                    <li data-rocky-memory-score="1"><b>1ª</b><span>+6 ★</span></li>
+                    <li data-rocky-memory-score="2"><b>2ª</b><span>+3 ★</span></li>
+                    <li data-rocky-memory-score="3"><b>3ª</b><span>+1 ★</span></li>
+                    <li data-rocky-memory-score="0"><b>Não concluiu</b><span>−3 ★</span></li>
+                  </ol>
+                </div>
+                <div class="memory-board memory-board--rocky" data-rocky-memory-board aria-label="Cartas do jogo Memória dos planetas rochosos"></div>
+                <div class="memory-result" data-rocky-memory-result hidden>
+                  <span data-rocky-memory-result-icon>★</span>
+                  <div><strong data-rocky-memory-result-title>Parabéns!</strong><p data-rocky-memory-result-copy></p></div>
+                  <div class="memory-result__actions"><button type="button" data-restart-rocky-memory-bonus>Jogar novamente</button><button type="button" data-close-rocky-memory-bonus>Continuar jornada →</button></div>
+                </div>
+              </div>
+            </section>
+
+            <section class="student-view" data-student-section="logbook" hidden>
+              <div data-world-journal-overview>
+                <div class="student-section-intro"><div><span>COLEÇÃO ESPACIAL</span><h2>Meu diário de bordo</h2><p>Conheça Aura Rubre e acompanhe suas descobertas nos nove planetas do sistema.</p></div><div class="collection-count"><b data-journal-count>0</b><span>descobertas</span></div></div>
+                <div class="world-journal-rank"><span aria-hidden="true">✦</span><div><small data-world-journal-level></small><strong data-world-journal-rank></strong><p><b data-world-journal-xp>0</b> XP · Cada diário de planeta completo vale 1 XP.</p></div></div>
+                <section class="world-journal-collection" aria-labelledby="world-journal-title">
+                  <div class="student-panel__heading"><div><h3 id="world-journal-title">Sistema Aura Rubre</h3><p>Desbloqueie planetas com estrelas e colecione suas figurinhas com moedas.</p></div></div>
+                  <div class="world-journal-gallery" data-world-journal-gallery></div>
+                  <div class="world-journal-empty" data-world-journal-empty><span aria-hidden="true">✦</span><p>Suas próximas histórias estão entre as estrelas.</p><button type="button" data-ui-student-view="explore">Explorar novos mundos →</button></div>
+                </section>
+              </div>
+              <section class="world-journal-detail" data-world-journal-detail aria-labelledby="world-journal-detail-title" hidden>
+                <button class="world-journal-back" type="button" data-world-journal-back>← Voltar aos planetas</button>
+                <header class="world-journal-heading">
+                  <img data-world-journal-planet-image alt="" />
+                  <div><span data-world-journal-location></span><h2 id="world-journal-detail-title" data-world-journal-detail-title tabindex="-1"></h2><p data-world-journal-intro></p><small data-world-journal-progress role="status"></small></div>
+                </header>
+                <article class="world-journal-star" data-world-journal-star hidden><h3>A estrela do sistema</h3><p data-world-journal-star-copy></p></article>
+                <div class="world-journal-discoveries" data-world-journal-discoveries></div>
+              </section>
+            </section>
+
+            <section class="student-view" data-student-section="avatar" hidden>
+              <div class="student-section-intro"><div><span>PERSONALIZAÇÃO</span><h2>Meu avatar</h2><p>Monte seu personagem do seu jeito e dê um nome para ele.</p></div></div>
+              <div class="avatar-layout"><div class="avatar-preview"><div class="avatar-image-stage" data-avatar role="img" aria-label="Prévia do avatar personalizado"></div><h3 data-avatar-item-name>Meu avatar</h3><p>Seu companheiro de aventuras!</p></div><div class="avatar-customizer" data-avatar-shop></div></div>
+            </section>
+
+            <section class="student-view" data-student-section="progress" hidden>
+              <div class="student-section-intro"><div><span>MINHAS CONQUISTAS</span><h2>Meu progresso</h2><p>Veja tudo o que você já conquistou nessa jornada.</p></div></div>
+              <div class="student-progress-hero"><div class="progress-ring" data-progress-ring><span data-progress-ring-value>0%</span></div><div><span>PROGRESSO GERAL</span><h3 data-progress-message>Continue explorando!</h3><p data-progress-description>Você está começando uma grande aventura matemática.</p></div></div>
+              <div class="achievement-grid"><article><i>★</i><div><strong data-achievement-stars>0 estrelas</strong><small>Conquistadas em desafios</small></div></article><article><i>◉</i><div><strong data-achievement-coins>0 moedas</strong><small>Na sua carteira</small></div></article><article><i>✓</i><div><strong data-achievement-missions>0 missões</strong><small>Concluídas</small></div></article><article><i>▣</i><div><strong data-achievement-journal>0 descobertas</strong><small>No diário de bordo</small></div></article><article><i>✦</i><div><strong data-achievement-xp>0 XP · Nível 1</strong><small data-achievement-rank>Observador do Céu</small></div></article></div>
+            </section>
+          </div>
+        </div>
+      </section>
+      <dialog class="world-page-dialog" data-world-page-dialog aria-labelledby="world-page-title" aria-describedby="world-page-copy">
+        <button class="world-page-close" type="button" data-world-page-close aria-label="Fechar página do diário">×</button>
+        <article class="world-page-paper">
+          <header class="world-page-heading"><span>DIÁRIO DE BORDO</span><p data-world-page-location></p><h2 id="world-page-title" data-world-page-title></h2><small data-world-page-status></small></header>
+          <figure class="world-page-figure" data-world-page-figure><img data-world-page-image src="assets/imagens/mundos/aerivia/planeta-aerivia.png" alt="" /><span class="world-page-lock" data-world-page-lock aria-hidden="true">🔒</span></figure>
+          <div class="world-page-copy"><p id="world-page-copy" data-world-page-copy></p></div>
+          <div class="world-page-purchase" data-world-page-purchase>
+            <div class="world-page-price"><span><img src="assets/imagens/design/moeda.png" alt="" /><b data-world-page-price></b><small>moedas</small></span><p data-world-page-balance></p></div>
+            <p class="world-page-message" data-world-page-message role="status"></p>
+            <button class="world-page-unlock" type="button" data-world-page-unlock>Desbloquear figurinha</button>
+          </div>
+          <footer class="world-page-footer"><span data-world-page-number></span><button type="button" data-world-page-close data-world-page-return>Voltar ao infográfico</button></footer>
+        </article>
+      </dialog>
+    </main>
+    <script src="addition-puzzles.js"></script>
+    <script src="subtraction-cards.js"></script>
+    <script src="column-arithmetic.js"></script>
+    <script src="regroup-arithmetic.js"></script>
+    <script src="money-missions.js"></script>
+    <script src="arithmetic-enigmas.js"></script>
+    <script src="geometry-missions.js"></script>
+    <script src="mental-calculations.js"></script>
+    <script src="multiplication-groups.js"></script>
+    <script src="multiplication-missions.js"></script>
+    <script src="measurement-missions.js"></script>
+    <script src="jar-missions.js"></script>
+    <script src="tape-missions.js"></script>
+    <script src="weight-missions.js"></script>
+    <script src="cross-operations.js"></script>
+    <script src="order-multiplication.js"></script>
+    <script src="division-missions.js"></script>
+    <script src="division-concepts.js"></script>
+    <script src="division-calculation.js"></script>
+    <script src="division-problems.js"></script>
+    <script src="world-discoveries.js"></script>
+    <script src="app.js"></script>
+    <script src="platform-ui.js"></script>
+    <script src="explore.js"></script>
+  </body>
+</html>

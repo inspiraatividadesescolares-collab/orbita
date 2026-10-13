@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="591" height="591" viewBox="0 0 591 591">
+  <title>Pirâmide de base quadrada</title>
+  <g stroke="#18213a" stroke-width="5" stroke-linejoin="round">
+    <path d="M105 405 290 90 495 405 300 510Z" fill="#f5cf65"/>
+    <path d="M105 405 290 90 300 510Z" fill="#ffe48a"/>
+    <path d="M300 510 290 90 495 405Z" fill="#d4a63b"/>
+    <path d="M105 405 305 320 495 405M290 90 305 320" fill="none" stroke-dasharray="14 12"/>
+  </g>
+</svg>

@@ -1,0 +1,505 @@
+{
+  "inventory": {
+    "screens": [
+      "home",
+      "profiles",
+      "form",
+      "success",
+      "admin",
+      "teacher",
+      "student"
+    ],
+    "student": [
+      "home",
+      "path",
+      "challenge",
+      "result",
+      "bonus",
+      "roulette",
+      "constellation",
+      "meteor",
+      "puzzle",
+      "rocky-memory",
+      "logbook",
+      "avatar",
+      "progress"
+    ],
+    "teacher": [
+      "overview",
+      "classes",
+      "students",
+      "progress",
+      "errors",
+      "reports"
+    ],
+    "admin": [
+      "approvals",
+      "teachers",
+      "classes",
+      "tracks",
+      "reports"
+    ],
+    "types": [
+      "quiz",
+      "drag",
+      "input",
+      "sum-triangle",
+      "sum-square",
+      "sum-three",
+      "subtract-pair",
+      "subtract-target",
+      "subtract-review",
+      "column-arithmetic",
+      "regroup-arithmetic",
+      "money-count",
+      "money-compare",
+      "money-difference",
+      "money-pay",
+      "money-change",
+      "arithmetic-enigma",
+      "jar-transfer",
+      "tape-assembly",
+      "weight-balance",
+      "cross-operations",
+      "order-multiplication",
+      "division-sharing",
+      "division-calculation"
+    ],
+    "missions": 51
+  },
+  "checks": [
+    {
+      "label": "home",
+      "width": 1366,
+      "overflow": false,
+      "broken": [],
+      "small": []
+    },
+    {
+      "label": "profiles",
+      "width": 1366,
+      "overflow": false,
+      "broken": [],
+      "small": [
+        "Cadastrar"
+      ]
+    },
+    {
+      "label": "student-login",
+      "width": 1366,
+      "overflow": false,
+      "broken": [],
+      "small": []
+    },
+    {
+      "label": "teacher-register",
+      "width": 1366,
+      "overflow": false,
+      "broken": [],
+      "small": [
+        "cadastro",
+        "armazenamento dos dados",
+        "Entrar"
+      ]
+    },
+    {
+      "label": "student-home",
+      "width": 1366,
+      "overflow": false,
+      "broken": [],
+      "small": []
+    },
+    {
+      "label": "student-path",
+      "width": 1366,
+      "overflow": false,
+      "broken": [],
+      "small": []
+    },
+    {
+      "label": "student-logbook",
+      "width": 1366,
+      "overflow": false,
+      "broken": [],
+      "small": []
+    },
+    {
+      "label": "student-avatar",
+      "width": 1366,
+      "overflow": false,
+      "broken": [],
+      "small": []
+    },
+    {
+      "label": "student-progress",
+      "width": 1366,
+      "overflow": false,
+      "broken": [],
+      "small": []
+    },
+    {
+      "label": "teacher-overview",
+      "width": 1366,
+      "overflow": false,
+      "broken": [],
+      "small": []
+    },
+    {
+      "label": "teacher-classes",
+      "width": 1366,
+      "overflow": false,
+      "broken": [],
+      "small": []
+    },
+    {
+      "label": "teacher-students",
+      "width": 1366,
+      "overflow": false,
+      "broken": [],
+      "small": []
+    },
+    {
+      "label": "teacher-progress",
+      "width": 1366,
+      "overflow": false,
+      "broken": [],
+      "small": []
+    },
+    {
+      "label": "teacher-errors",
+      "width": 1366,
+      "overflow": false,
+      "broken": [],
+      "small": []
+    },
+    {
+      "label": "teacher-reports",
+      "width": 1366,
+      "overflow": false,
+      "broken": [],
+      "small": []
+    },
+    {
+      "label": "admin-approvals",
+      "width": 1366,
+      "overflow": false,
+      "broken": [],
+      "small": []
+    },
+    {
+      "label": "admin-teachers",
+      "width": 1366,
+      "overflow": false,
+      "broken": [],
+      "small": []
+    },
+    {
+      "label": "admin-classes",
+      "width": 1366,
+      "overflow": false,
+      "broken": [],
+      "small": []
+    },
+    {
+      "label": "admin-tracks",
+      "width": 1366,
+      "overflow": false,
+      "broken": [],
+      "small": []
+    },
+    {
+      "label": "admin-reports",
+      "width": 1366,
+      "overflow": false,
+      "broken": [],
+      "small": []
+    },
+    {
+      "label": "home",
+      "width": 375,
+      "overflow": false,
+      "broken": [],
+      "small": []
+    },
+    {
+      "label": "profiles",
+      "width": 375,
+      "overflow": false,
+      "broken": [],
+      "small": []
+    },
+    {
+      "label": "student-login",
+      "width": 375,
+      "overflow": false,
+      "broken": [],
+      "small": []
+    },
+    {
+      "label": "teacher-register",
+      "width": 375,
+      "overflow": false,
+      "broken": [],
+      "small": [
+        "cadastro",
+        "armazenamento dos dados"
+      ]
+    },
+    {
+      "label": "student-home",
+      "width": 375,
+      "overflow": false,
+      "broken": [],
+      "small": []
+    },
+    {
+      "label": "student-path",
+      "width": 375,
+      "overflow": false,
+      "broken": [],
+      "small": []
+    },
+    {
+      "label": "student-logbook",
+      "width": 375,
+      "overflow": false,
+      "broken": [],
+      "small": []
+    },
+    {
+      "label": "student-avatar",
+      "width": 375,
+      "overflow": false,
+      "broken": [],
+      "small": []
+    },
+    {
+      "label": "student-progress",
+      "width": 375,
+      "overflow": false,
+      "broken": [],
+      "small": []
+    },
+    {
+      "label": "teacher-overview",
+      "width": 375,
+      "overflow": false,
+      "broken": [],
+      "small": []
+    },
+    {
+      "label": "teacher-classes",
+      "width": 375,
+      "overflow": false,
+      "broken": [],
+      "small": []
+    },
+    {
+      "label": "teacher-students",
+      "width": 375,
+      "overflow": false,
+      "broken": [],
+      "small": []
+    },
+    {
+      "label": "teacher-progress",
+      "width": 375,
+      "overflow": false,
+      "broken": [],
+      "small": []
+    },
+    {
+      "label": "teacher-errors",
+      "width": 375,
+      "overflow": false,
+      "broken": [],
+      "small": []
+    },
+    {
+      "label": "teacher-reports",
+      "width": 375,
+      "overflow": false,
+      "broken": [],
+      "small": []
+    },
+    {
+      "label": "admin-approvals",
+      "width": 375,
+      "overflow": false,
+      "broken": [],
+      "small": []
+    },
+    {
+      "label": "admin-teachers",
+      "width": 375,
+      "overflow": false,
+      "broken": [],
+      "small": []
+    },
+    {
+      "label": "admin-classes",
+      "width": 375,
+      "overflow": false,
+      "broken": [],
+      "small": []
+    },
+    {
+      "label": "admin-tracks",
+      "width": 375,
+      "overflow": false,
+      "broken": [],
+      "small": []
+    },
+    {
+      "label": "admin-reports",
+      "width": 375,
+      "overflow": false,
+      "broken": [],
+      "small": []
+    },
+    {
+      "label": "home",
+      "width": 320,
+      "overflow": false,
+      "broken": [],
+      "small": []
+    },
+    {
+      "label": "profiles",
+      "width": 320,
+      "overflow": false,
+      "broken": [],
+      "small": []
+    },
+    {
+      "label": "student-login",
+      "width": 320,
+      "overflow": false,
+      "broken": [],
+      "small": []
+    },
+    {
+      "label": "teacher-register",
+      "width": 320,
+      "overflow": false,
+      "broken": [],
+      "small": [
+        "cadastro",
+        "armazenamento dos dados"
+      ]
+    },
+    {
+      "label": "student-home",
+      "width": 320,
+      "overflow": false,
+      "broken": [],
+      "small": []
+    },
+    {
+      "label": "student-path",
+      "width": 320,
+      "overflow": false,
+      "broken": [],
+      "small": []
+    },
+    {
+      "label": "student-logbook",
+      "width": 320,
+      "overflow": false,
+      "broken": [],
+      "small": []
+    },
+    {
+      "label": "student-avatar",
+      "width": 320,
+      "overflow": false,
+      "broken": [],
+      "small": []
+    },
+    {
+      "label": "student-progress",
+      "width": 320,
+      "overflow": false,
+      "broken": [],
+      "small": []
+    },
+    {
+      "label": "teacher-overview",
+      "width": 320,
+      "overflow": false,
+      "broken": [],
+      "small": []
+    },
+    {
+      "label": "teacher-classes",
+      "width": 320,
+      "overflow": false,
+      "broken": [],
+      "small": []
+    },
+    {
+      "label": "teacher-students",
+      "width": 320,
+      "overflow": false,
+      "broken": [],
+      "small": []
+    },
+    {
+      "label": "teacher-progress",
+      "width": 320,
+      "overflow": false,
+      "broken": [],
+      "small": []
+    },
+    {
+      "label": "teacher-errors",
+      "width": 320,
+      "overflow": false,
+      "broken": [],
+      "small": []
+    },
+    {
+      "label": "teacher-reports",
+      "width": 320,
+      "overflow": false,
+      "broken": [],
+      "small": []
+    },
+    {
+      "label": "admin-approvals",
+      "width": 320,
+      "overflow": false,
+      "broken": [],
+      "small": []
+    },
+    {
+      "label": "admin-teachers",
+      "width": 320,
+      "overflow": false,
+      "broken": [],
+      "small": []
+    },
+    {
+      "label": "admin-classes",
+      "width": 320,
+      "overflow": false,
+      "broken": [],
+      "small": []
+    },
+    {
+      "label": "admin-tracks",
+      "width": 320,
+      "overflow": false,
+      "broken": [],
+      "small": []
+    },
+    {
+      "label": "admin-reports",
+      "width": 320,
+      "overflow": false,
+      "broken": [],
+      "small": []
+    }
+  ],
+  "errors": []
+}

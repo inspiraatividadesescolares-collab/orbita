@@ -1,0 +1,59 @@
+.challenge-options.tape-activity{display:block}
+.tape-game{padding:16px;border:1px solid #dbe4ef;border-radius:16px;background:#f8fbff;color:#041455}
+.tape-toolbar{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px;font-size:14px}
+.tape-toolbar strong{color:#a0006d;font:500 22px Fredoka,system-ui,sans-serif}
+.challenge-options.tape-activity [data-tape-reset]{min-height:34px;width:auto;padding:6px 10px;font:600 12px system-ui,sans-serif;border:1px solid #ccd4e9;border-radius:9px;background:#fff;color:#4937df;text-align:center}
+.tape-board{padding:10px 14px 6px;border:2px dashed #b5cee9;border-radius:14px;background:#fff;transition:border-color .15s,background .15s}
+.tape-board.is-drop-target{border-color:#4937df;background:#f1eeff}
+.tape-viewport{overflow-x:auto;overflow-y:hidden;overscroll-behavior:contain;padding:4px 0 7px}
+.tape-canvas{min-width:100%;padding-bottom:2px}
+.tape-track{height:82px;display:flex;align-items:stretch;background:#f0f5fc;border:1px solid #dbe4ef;border-radius:8px;overflow:hidden}
+.tape-empty{display:grid;place-items:center;width:100%;text-align:center;color:#66758e;font-size:14px}
+.tape-scale{position:relative;height:29px;margin:8px 1px 0}
+.tape-scale i{position:absolute;top:0;height:5px;border-left:1px solid #7185a3;font-style:normal}
+.tape-scale i.tape-tick-major{height:9px}
+.tape-scale i span{position:absolute;top:10px;left:0;font:11px Arial,sans-serif;color:#53677d;white-space:nowrap;transform:translateX(-50%)}
+.tape-scale i:first-child span{transform:none}
+.tape-scale i:last-child{transform:translateX(-1px)}
+.tape-scale i:last-child span{transform:translateX(-100%)}
+.tape-tray-heading{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:6px;margin:15px 0 8px}
+.tape-tray-heading>span{font-size:11px;font-weight:700;letter-spacing:.07em;color:#a0006d}
+.tape-tray-heading>small{font-size:11px;line-height:1.4;color:#53677d}
+.tape-tray{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px;padding:8px;border:2px solid transparent;border-radius:12px}
+.tape-tray.is-drop-target{border-color:#4937df;background:#f1eeff}
+.challenge-options.tape-activity .tape-piece,.tape-drag-ghost{display:flex;align-items:center;justify-content:center;position:relative;flex:0 0 auto;width:var(--tape-size);height:55px;min-height:0;min-width:0;padding:5px 3px;border:3px solid var(--tape-edge);border-radius:7px;background:linear-gradient(180deg,#ffffff35,transparent 45%,#04145515),var(--tape-color);box-shadow:0 3px 5px #071c6310;touch-action:none;user-select:none;cursor:grab;text-align:center}
+.tape-piece::before,.tape-drag-ghost::before{content:'';position:absolute;left:2px;right:2px;top:3px;bottom:3px;border-top:1px dashed #ffffffaa;border-bottom:1px dashed #ffffffaa;pointer-events:none}
+.tape-piece>span,.tape-drag-ghost>span{display:flex;align-items:baseline;justify-content:center;gap:3px;position:relative;padding:2px 5px;border-radius:6px;background:#ffffffed;color:#071c63;font:500 22px Fredoka,system-ui,sans-serif}
+.tape-piece small,.tape-drag-ghost small{font:600 11px Arial,sans-serif}
+.challenge-options.tape-activity .tape-piece:hover:not(:disabled){transform:none;filter:brightness(1.04);background:linear-gradient(180deg,#ffffff45,transparent 45%,#04145515),var(--tape-color);border-color:var(--tape-edge)}
+.challenge-options.tape-activity .tape-placed{height:100%;padding:2px 1px;border-radius:0;border-width:3px 1px;box-shadow:none}
+.tape-placed+.tape-placed::after{content:'';position:absolute;top:0;bottom:0;left:-1px;border-left:2px dashed #fff}
+.tape-placed>span{flex-direction:column;align-items:center;gap:0;font-size:18px;padding:2px}
+.challenge-options.tape-activity .tape-piece:disabled{cursor:default}
+.tape-piece.is-used{opacity:.25;filter:saturate(.3)}
+.tape-piece.is-dragging{opacity:.4}
+.tape-game.is-correct .tape-board{border-color:#0f9976;background:#eafff7}
+.tape-game.is-wrong .tape-board{border-color:#df517b;background:#fff2f6}
+.challenge-options.tape-activity button:focus-visible{outline:3px solid #e2ac00;outline-offset:2px}
+.tape-status{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.tape-drag-ghost{position:fixed;z-index:1000;pointer-events:none;filter:drop-shadow(0 6px 8px #071c6335)}
+@media(min-width:951px){
+  .tape-challenge .tape-game{padding:10px 14px}
+  .tape-challenge .tape-toolbar{margin-bottom:8px}
+  .tape-challenge .tape-track{height:65px}
+  .tape-challenge .tape-tray-heading{margin-top:9px}
+  .tape-challenge .tape-tray{padding:4px;gap:8px}
+  .tape-challenge .tape-piece:not(.tape-placed){height:48px}
+  .tape-challenge .challenge-feedback p{min-width:0}
+}
+@media(max-width:600px){
+  .tape-game{padding:10px 8px}
+  .tape-toolbar{font-size:12px;gap:6px}.tape-toolbar strong{font-size:18px}
+  .tape-board{padding:6px 7px 3px}
+  .tape-track{height:67px}
+  .tape-tray-heading>small{font-size:11px}
+  .tape-tray{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;padding:6px 0}
+  .challenge-options.tape-activity .tape-piece:not(.tape-placed){width:100%;height:49px}
+  .tape-placed>span{font-size:14px;padding:2px 1px}.tape-placed small{font-size:9px}
+}
+@media(prefers-reduced-motion:reduce){.tape-board{transition:none}}

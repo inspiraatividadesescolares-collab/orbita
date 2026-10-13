@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <defs>
+    <radialGradient id="red"><stop stop-color="#ff7051"/><stop offset=".7" stop-color="#ee3825"/><stop offset="1" stop-color="#b51b12"/></radialGradient>
+    <linearGradient id="edge" x2="0" y2="1"><stop stop-color="#ff7859"/><stop offset="1" stop-color="#981710"/></linearGradient>
+  </defs>
+  <path fill="url(#edge)" stroke="#ac251a" stroke-width="1.5" d="M60 5 66 9 73 7 78 13 85 13 89 20 96 22 98 30 105 35 104 43 111 49 108 57 112 65 107 72 108 80 101 85 99 93 91 96 87 103 79 102 73 110 65 106 58 112 51 107 43 108 38 101 30 99 27 91 20 87 19 79 12 73 16 65 10 58 14 50 13 42 20 37 22 29 30 26 34 19 42 18 48 10 56 12Z"/>
+  <g fill="none" stroke="#ff9b77" stroke-width="2" opacity=".7">
+    <path d="m25 31 7 5m-14 6 8 3m-10 8 8 1m-7 12 8-2m-3 13 8-4m0 13 7-6m4 12 4-8m8 11 2-9m10 10-1-9m13 6-4-8m15 2-6-6m14-2-8-4m13-6-9-1m10-11-9 1m5-13-8 4m0-15-6 6m-5-13-4 8m-8-12-1 9m-11-9 2 9m-14-5 5 8"/>
+  </g>
+  <circle cx="60" cy="56" r="43" fill="url(#red)" stroke="#ff977b" stroke-width="3"/>
+  <circle cx="60" cy="56" r="37" fill="none" stroke="#e44931" stroke-width="2"/>
+  <path d="M31 39a34 34 0 0 1 40-15" fill="none" stroke="#ffc3a3" stroke-width="4" stroke-linecap="round" opacity=".55"/>
+</svg>
